@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @fnurrahmadi
+- 👋 Hi, I’m Fakhri Nurrahmadi
 - 👀 I’m interested in Data Science
 - 🌱 I’m currently re-learning relational database, statistical analysis tools, data visualization, machine learning modelling
 - 📫 Reach me via [LinkedIn](https://www.linkedin.com/in/fakhri-nurrahmadi-7b2976178/)
