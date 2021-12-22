@@ -1159,7 +1159,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_30_0.png)
+![png](/Telco%20Customer%20Churn/img/output_30_0.png)
     
 
 
@@ -1180,7 +1180,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_34_0.png)
+![png](/Telco%20Customer%20Churn/img/output_34_0.png)
     
 
 
@@ -1197,7 +1197,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_36_0.png)
+![png](/Telco%20Customer%20Churn/img/output_36_0.png)
     
 
 
@@ -1214,7 +1214,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_38_0.png)
+![png](/Telco%20Customer%20Churn/img/output_38_0.png)
     
 
 
@@ -1231,7 +1231,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_40_0.png)
+![png](/Telco%20Customer%20Churn/img/output_40_0.png)
     
 
 
@@ -1252,7 +1252,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_44_0.png)
+![png](/Telco%20Customer%20Churn/img/output_44_0.png)
     
 
 
@@ -1269,7 +1269,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_46_0.png)
+![png](/Telco%20Customer%20Churn/img/output_46_0.png)
     
 
 
@@ -1286,7 +1286,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_48_0.png)
+![png](/Telco%20Customer%20Churn/img/output_48_0.png)
     
 
 
@@ -1303,7 +1303,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_50_0.png)
+![png](/Telco%20Customer%20Churn/img/output_50_0.png)
     
 
 
@@ -1320,7 +1320,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_52_0.png)
+![png](/Telco%20Customer%20Churn/img/output_52_0.png)
     
 
 
@@ -1341,7 +1341,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](/img/output_56_0.png)
+![png](/Telco%20Customer%20Churn/img/output_56_0.png)
     
 
 
@@ -1359,7 +1359,7 @@ ax.tick_params(labelsize=14, axis='x', rotation=60)
 
 
     
-![png](/img/output_58_0.png)
+![png](/Telco%20Customer%20Churn/img/output_58_0.png)
     
 
 
@@ -1381,7 +1381,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](/img/output_61_0.png)
+![png](/Telco%20Customer%20Churn/img/output_61_0.png)
     
 
 
@@ -1398,7 +1398,7 @@ plt.show()
 
 
     
-![png](/img/output_63_0.png)
+![png](/Telco%20Customer%20Churn/img/output_63_0.png)
     
 
 
@@ -1415,7 +1415,7 @@ plt.show()
 
 
     
-![png](/img/output_65_0.png)
+![png](/Telco%20Customer%20Churn/img/output_65_0.png)
     
 
 
@@ -1437,7 +1437,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](/img/output_68_0.png)
+![png](/Telco%20Customer%20Churn/img/output_68_0.png)
     
 
 
@@ -1454,7 +1454,7 @@ plt.show()
 
 
     
-![png](/img/output_70_0.png)
+![png](/Telco%20Customer%20Churn/img/output_70_0.png)
     
 
 
@@ -1471,7 +1471,7 @@ plt.show()
 
 
     
-![png](/img/output_72_0.png)
+![png](/Telco%20Customer%20Churn/img/output_72_0.png)
     
 
 
@@ -1493,7 +1493,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](/img/output_75_0.png)
+![png](/Telco%20Customer%20Churn/img/output_75_0.png)
     
 
 
@@ -1510,7 +1510,7 @@ plt.show()
 
 
     
-![png](/img/output_77_0.png)
+![png](/Telco%20Customer%20Churn/img/output_77_0.png)
     
 
 
@@ -1527,7 +1527,7 @@ plt.show()
 
 
     
-![png](/img/output_79_0.png)
+![png](/Telco%20Customer%20Churn/img/output_79_0.png)
     
 
 
@@ -1543,7 +1543,7 @@ plt.show()
 
 
     
-![png](/img/output_81_0.png)
+![png](/Telco%20Customer%20Churn/img/output_81_0.png)
     
 
 
@@ -1559,7 +1559,7 @@ plt.show()
 
 
     
-![png](/img/output_83_0.png)
+![png](/Telco%20Customer%20Churn/img/output_83_0.png)
     
 
 
@@ -2095,7 +2095,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](/img/output_100_0.png)
+![png](/Telco%20Customer%20Churn/img/output_100_0.png)
     
 
 
@@ -2143,7 +2143,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](/img/output_104_0.png)
+![png](/Telco%20Customer%20Churn/img/output_104_0.png)
     
 
 
@@ -2517,7 +2517,7 @@ sns.heatmap(data_test.corr(), linewidth=0.1, square=True, cmap='magma')
 
 
     
-![png](/img/output_115_1.png)
+![png](/Telco%20Customer%20Churn/img/output_115_1.png)
     
 
 
@@ -2567,7 +2567,7 @@ plt.show()
 
 
     
-![png](/img/output_122_0.png)
+![png](/Telco%20Customer%20Churn/img/output_122_0.png)
     
 
 
@@ -2599,7 +2599,7 @@ ax = sns.barplot(y=[X_train.columns.values[x] for x in ix], x=[importance[x] for
 
 
     
-![png](/img/output_126_0.png)
+![png](/Telco%20Customer%20Churn/img/output_126_0.png)
     
 
 
@@ -2623,7 +2623,7 @@ ax = sns.scatterplot(y=[col for col in X_train.columns.values], x=brt_ranking, h
 
 
     
-![png](/img/output_130_0.png)
+![png](/Telco%20Customer%20Churn/img/output_130_0.png)
     
 
 
@@ -2792,7 +2792,7 @@ plt.show()
 
 
     
-![png](/img/output_146_0.png)
+![png](/Telco%20Customer%20Churn/img/output_146_0.png)
     
 
 
@@ -2880,7 +2880,7 @@ plt.show()
 
 
     
-![png](/img/output_154_0.png)
+![png](/Telco%20Customer%20Churn/img/output_154_0.png)
     
 
 
@@ -3247,7 +3247,7 @@ plt.show()
 
 
     
-![png](/img/output_159_1.png)
+![png](/Telco%20Customer%20Churn/img/output_159_1.png)
     
 
 
