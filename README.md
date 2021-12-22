@@ -1,6 +1,10 @@
 # Data Science Portfolio
 
-My name is Fakhri Nurrahmadi. I am an aspiring Data Scientist. I am currently re-learning relational database, statistical analysis tools, data visualization, machine learning modelling. You can find me on [LinkedIn](https://www.linkedin.com/in/fnurrahmadi/), [Kaggle](https://www.kaggle.com/hidious), [GitHub](https://github.com/fnurrahmadi), or directly email me at fnurrahmadi@gmail.com
+My name is Fakhri Nurrahmadi. I am an aspiring Data Scientist. I am currently re-learning relational database, statistical analysis tools, data visualization, machine learning modelling. You can find me on:
+- [LinkedIn](https://www.linkedin.com/in/fnurrahmadi/)
+- [Kaggle](https://www.kaggle.com/hidious)
+- [GitHub](https://github.com/fnurrahmadi)
+- Or directly email me at fnurrahmadi@gmail.com
 
 This repository is created to store the projects I have completed with Python in hopes of building a solid Data Science portfolio. Each folder in this repository contains a separate project. I am thrilled to continue stacking more projects here as I am driven by my will to learn and improve 😊
 
