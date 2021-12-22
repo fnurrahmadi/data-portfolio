@@ -15,6 +15,6 @@ This repository is created to store the projects I have completed with Python in
 - Tuning parameters of Random Forest Classifier to improve prediction
 - Measuring the distance of a customer's data point (tenure and charge per year) to find the maximum discount amount to be given
 
-![line of best fit with data points](Telco Customer Churn/img/output_159_1.png)
+![line of best fit with data points](data-science-portfolio/Telco Customer Churn/img/output_159_1.png)
 
 In the graph above, a line of best fit is plotted based on the overall tenure in years and charges per year. To find the maximum amount that can be given to a customer, we can find the distance between the charges per year of the customer and the charges on the line of best fit at a particular tenure. A positive distance indicates that the maximum amount of discount we can give them. Meanwhile, a negative distance indicates that the customer is not profitable for retention and their value is less than the overall customers.
