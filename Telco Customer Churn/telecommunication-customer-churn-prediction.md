@@ -1,11 +1,13 @@
 # INTRODUCTION
 
-It's no surprise to say that companies suffer when their customers churn. In this particular case, a telecommunication company suffers financially -- in the form of revenue -- when their customers churn. Due to that, they are looking to retend their existing customers by providing discount coupons. However, they are concerned if they will profit from the discount prgram, and therefore, are only willing to give discount coupons to customers that are of value.
+It's no surprise to say that companies suffer when their customers churn. In this particular case, a telecommunication company suffers financially -- in the form of revenue -- when their customers churn. Due to that, they are looking to create a retention program in the form of providing discounts for customers who are likely to churn. However, they are concerned with the profitability of the retention program, and therefore, are only willing to provide discounts to customers that are of value.
 
-## OBJECTIVE
+The data set in this project is taken from Kaggle: [Telco Customer Churn](https://www.kaggle.com/blastchar/telco-customer-churn)
+
+## OBJECTIVES
 To sum it up, the tasks in this project entails as such:
 - predict customers who are likely to churn
-- determining which customers are profitable for retention
+- determine which customers are profitable for retention
 
 
 ```python
@@ -18,24 +20,20 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
         print(os.path.join(dirname, filename))
 ```
 
-    /kaggle/input/telco-customer-churn/WA_Fn-UseC_-Telco-Customer-Churn.csv
-    
-
 # DATA SET
 
-From the given description of this data set, we already know some information about the columns in our data set as such:
-- Churn indicates the customers who left within the last month, which will be our target variable.
+From the given description of this data set, some information are already known about the columns in our data set as such:
+- Churn indicates the customers who left within the last month, which is our target variable
 - Services that customers have signed up for, which are phone service, multiple lines, internet, online security, online backup, device protection, tech support, TV streaming, and movie streaming
 - Customer account information, which are tenure, contract type, payment method, paperless billing, monthly charges, and total charges
 - Demographic info about customers, which are gender, if they are a senior citizen, and if they have partners and dependents
 
 ## OVERVIEW
 
-Let us start by taking a quick glance at our dataset!
-
 
 ```python
-df = pd.read_csv('/kaggle/input/telco-customer-churn/WA_Fn-UseC_-Telco-Customer-Churn.csv')
+# df = pd.read_csv('/kaggle/input/telco-customer-churn/WA_Fn-UseC_-Telco-Customer-Churn.csv')
+df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
 df
 ```
 
@@ -378,7 +376,7 @@ df.info()
     memory usage: 1.1+ MB
     
 
-We can see that there are 21 columns and 7043 rows in total. Upon inspecting the first few rows, we see that there are a few numerical data, which should be senior citizen, tenure, monthly charges, and total charges. However, we can see that the total charges column was listed as an object instead of a numerical data type, so let us find out what that looks like and fix any issue we find.
+With a quick glance of our data set, we can see that there are 21 columns and 7043 rows in total. Upon inspecting the just a few rows, we see that there are some data in numerical form, which would be senior citizen, tenure, monthly charges, and total charges. Contradictingly, the total charges column was listed as an object instead of a numerical data type. This calls for data cleaning and manipulation, so let us find out what our data looks like and fix any issue we find.
 
 ## DATA CLEANING
 
@@ -405,7 +403,7 @@ df['TotalCharges'].sort_values()
 
 
 
-When we sort our values, we get to see the top and bottom edges of our data when printed out, and we can see that there are empty values at the start. In order to convert the column's data type to a numerical data type, we would need to convert these empty values to a value that is operatable.
+When we sort our values, we get to see the top and bottom edges of our data when printed out, and we can see that there are empty values at the start. In order to convert the column's data type to a numerical data type, we need to convert these empty values to a value that is operatable by Pandas.
 
 
 ```python
@@ -432,7 +430,7 @@ df['TotalCharges'].sort_values()
 
 
 
-We have replaced the empty values with numpy's null values (NaN which stands for Not a Number), and now we will decide what to do with these null values that may prevent us from getting accurate analysis. We may want to inspect why there are empty values in the total charges column in the first place.
+We have replaced the empty values with numpy's null values (NaN which stands for Not a Number), and now we will decide what to do with these null values that may prevent us from getting accurate analysis. We might want to inspect why there are empty values in the total charges column in the first place.
 
 
 ```python
@@ -755,9 +753,9 @@ df.TotalCharges.isna().sum()
 
 
 
-There are a total of 11 rows without total charges. With the data listed above, we can see that there is a similarity in all these 11 customers that lead to them having no total charges, which is that their tenure is 0. We can draw the conclusion that customers with 0 tenure has paid no charges at all (0 tenure = 0 total charges).
+There are a total of 11 rows without total charges. With the subsetted data listed above, we can see that there is a similarity in all these 11 customers that lead to them having no total charges, which is that their tenure is 0. We can draw the conclusion that customers with 0 tenure has paid no charges at all (0 tenure = 0 total charges).
 
-Compared to the 7043 rows that we have in this dataset, 11 rows are insignificant in size, and there is no actual value that we can replace the null values with. As such, we will just drop these 11 rows.
+Compared to the 7043 rows that we have in this dataset plus the consideration above, not only are these 11 rows are insignificant in size but also there is practically no value we can replace these null values with. As such, we will drop these rows.
 
 
 ```python
@@ -827,7 +825,7 @@ df.dtypes
 
 
 
-Another column whose data we may want to fix is the SeniorCitizen column. As of now, the unique values from this column is respectively "1" which indicates that the customer is a senior citizen and "0" which indicates that the customer is a non-senior citizen. Instead of a number, we will change this into something more easily decipherable, as simple as "Yes" and "No" values.
+Another column whose data we may want to fix is the SeniorCitizen column. As of now, the unique values from this column is respectively "1" which indicates that the customer is a senior citizen and "0" which indicates that the customer is a non-senior citizen. Instead of numbers, we will change this into entries more easily decipherable, as simple as "Yes" and "No" values.
 
 
 ```python
@@ -995,7 +993,7 @@ df.head()
 
 
 
-We've already fixed the data type for all the numerical columns. Now we also need to convert the categorical columns into the correct data type 'category' -- this allows faster data processing. After that, we will double-check for null values and duplicated rows in the whole dataset.
+We've already fixed the data type for all the numerical columns. Now we also need to convert the categorical columns into the correct data type 'category' -- this allows faster data processing by Pandas. After that, we will double-check for null values and duplicated rows in the whole dataset.
 
 
 ```python
@@ -1135,11 +1133,11 @@ df.describe()
 
 
 
-After cleaning our data and making sure they have the correct data types, we now have a total of 21 columns and 7032 rows, from which we can start making analyis.
+After cleaning our data and making sure they have the correct data types, we now have a total of 21 columns and 7032 rows, from which we can start making our analyis.
 
 # EXPLORATORY DATA ANALYSIS
 
-Since we are trying to determine the factors that are causing customers to churn, we will be aggregating the data based on customers that churned and on customers that did not in this analysis. To ease the process of analysis, visualizations will be performed on the data.
+Since we are trying to determine the factors that are causing customers to churn, in this analysis, we will be aggregating the data based on customers that churned and on customers that did not. To ease the process of analysis, visualizations will be performed on the data. First and foremost, let us compare the number of churned customers and existing customers.
 
 
 ```python
@@ -1149,8 +1147,6 @@ custom_params = {"axes.spines.right": False, "axes.spines.top": False}
 sns.set_theme(style = 'ticks', font_scale = 1.25, context = 'notebook', rc = custom_params)
 blue, red = '#1A74FE', '#FF2626'
 ```
-
-First and foremost, let us compare the number of churned customers and existing customers.
 
 
 ```python
@@ -1163,7 +1159,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_32_0.png)
+![png](/img/output_30_0.png)
     
 
 
@@ -1184,7 +1180,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_36_0.png)
+![png](/img/output_34_0.png)
     
 
 
@@ -1201,11 +1197,11 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_38_0.png)
+![png](/img/output_36_0.png)
     
 
 
-When comparing based on age range, we can see that there are more non-senior citizen customers subscribed in general. 60% of the non-senior citizens did not churn, while 20 % of them churned. Meanwhile, the rest 20% are senior citizens, where there are more who did not churn than there are who churned.
+When comparing their age range, we can see that there are more non-senior citizen customers subscribed in general. 60% of the non-senior citizens did not churn, while 20 % of them churned. Meanwhile, the rest 20% are senior citizens, where there are more who did not churn than there are who churned.
 
 
 ```python
@@ -1218,11 +1214,11 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_40_0.png)
+![png](/img/output_38_0.png)
     
 
 
-Based on having a partner, there is a little bit more customers who did not have partners than there are who have partners. There is an almost equal distribution of those who churned and those who did not. 
+Based on having a partner, there is a little bit more customers who did not have partners than there are who have partners. However, there is an almost equal distribution of those who churned and those who did not. 
 
 
 ```python
@@ -1235,7 +1231,7 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_42_0.png)
+![png](/img/output_40_0.png)
     
 
 
@@ -1256,11 +1252,11 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_46_0.png)
+![png](/img/output_44_0.png)
     
 
 
-In general, most of the customers opted for the fiber optic internet service. We can also see that there are more customers with fiber optic internet service who churned when compared to the other internet services. Below the fiber optic, there is the DSL internet service coming in second in terms of the number of customer who subscribed for it, and customer with no internet service coming in last.
+In general, most of the customers opted for the fiber optic internet service. We can also see that there are more customers with fiber optic internet service who churned when compared to the other internet services. Ranked below the fiber optic, there is the DSL internet service coming in second in terms of the number of customers who subscribed for it, and customers with no internet service coming in last.
 
 
 ```python
@@ -1273,11 +1269,11 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_48_0.png)
+![png](/img/output_46_0.png)
     
 
 
-Based on their online security, we can easily see that there is high percentage of customer who churned without having the online security in their subscription. Overall, there are a lot of customers who did not have online security in their subscription (50 percent).
+Based on their online security, we can easily see that there is high percentage of customer who churned without having online security in their subscription. Overall, there are a lot of customers who did not have online security in their subscription (50 percent).
 
 
 ```python
@@ -1290,11 +1286,11 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_50_0.png)
+![png](/img/output_48_0.png)
     
 
 
-Based on online backup, most of the customers did not have online backup, and we can also see that there is a high percentage of customer who churned without having online backup in their subscription.
+Based on online backup, most of the customers did not have online backup, and we can also see that there is a high percentage of customers who churned without having online backup in their subscription.
 
 
 ```python
@@ -1307,11 +1303,11 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_52_0.png)
+![png](/img/output_50_0.png)
     
 
 
-Based on device protection, most of the customers did not opt to have device protection as part of their services. A lot of customers who did not have device protection also churned.
+Based on device protection, most of the customers chose not to have device protection as part of their services, and a lot of customers who did not have device protection also churned.
 
 
 ```python
@@ -1324,11 +1320,11 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_54_0.png)
+![png](/img/output_52_0.png)
     
 
 
-50% of customer did not sign up to have tech support, and overall, there is a high percentage of customers who churned without having tech support.
+50% of the customers did not sign up to have tech support, and overall, there is a high percentage of customers who churned without having tech support.
 
 ## BASED ON ACCOUNT INFORMATION
 
@@ -1345,11 +1341,11 @@ ax.tick_params(labelsize=14)
 
 
     
-![png](img/output_58_0.png)
+![png](/img/output_56_0.png)
     
 
 
-In general, more customers were on the month-to-month contract (50 percent) than there are with one-year and two-year contract. A lot of customers who churned were also on the month-to-month contract.
+In general, there are more customers on the month-to-month contract (50 percent) than there are on the one-year and two-year contract. A lot of customers who churned were also on the month-to-month contract.
 
 
 ```python
@@ -1363,7 +1359,7 @@ ax.tick_params(labelsize=14, axis='x', rotation=60)
 
 
     
-![png](img/output_60_0.png)
+![png](/img/output_58_0.png)
     
 
 
@@ -1385,11 +1381,11 @@ ax.margins(y = 0.2)
 
 
     
-![png](img/output_63_0.png)
+![png](/img/output_61_0.png)
     
 
 
-Grouped by whether the customers churned or not, we can see that there is a difference in their average monthly charges. Customer who did not churn were paying less monthly charges overall with a difference of around 13 in their monthly averages.
+Grouped by whether or not the customers churned, we can see that there is a difference in their average monthly charges. Customers who did not churn were paying less monthly charges overall with a difference of around 13 in their monthly averages.
 
 
 ```python
@@ -1402,7 +1398,7 @@ plt.show()
 
 
     
-![png](img/output_65_0.png)
+![png](/img/output_63_0.png)
     
 
 
@@ -1419,11 +1415,11 @@ plt.show()
 
 
     
-![png](img/output_67_0.png)
+![png](/img/output_65_0.png)
     
 
 
-To clearly see the distribution of the monthly charges, a histogram with a kernel density estimator line is used. We can see that a lot of customers who did not churn are on the cheapest monthly charge around 20, with how the bin is high and the kde curves up at 20, which caused the 25th percentile of the interquartile range to stretch very low. However, we do not see this same pattern for the customers who churned, with how there are of customers paying around 20 monthly charge.
+To clearly see the distribution of the monthly charges, a histogram with a kernel density estimator line is used. We can see that a lot of customers who did not churn are on the cheapest monthly charge around 20, with how much taller the bin is and how the kde line curves up at 20, which causes the 25th percentile of the interquartile range of its boxplot to stretch very low. Unlike the pattern we found for the customers who did not churn, we do not see this same pattern for the customers who churned, as the monthly charges at 20 is not as populated.
 
 #### TOTAL CHARGES
 
@@ -1441,7 +1437,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](img/output_70_0.png)
+![png](/img/output_68_0.png)
     
 
 
@@ -1458,7 +1454,7 @@ plt.show()
 
 
     
-![png](img/output_72_0.png)
+![png](/img/output_70_0.png)
     
 
 
@@ -1475,7 +1471,7 @@ plt.show()
 
 
     
-![png](img/output_74_0.png)
+![png](/img/output_72_0.png)
     
 
 
@@ -1497,7 +1493,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](img/output_77_0.png)
+![png](/img/output_75_0.png)
     
 
 
@@ -1514,7 +1510,7 @@ plt.show()
 
 
     
-![png](img/output_79_0.png)
+![png](/img/output_77_0.png)
     
 
 
@@ -1522,20 +1518,20 @@ In this boxplot of customer's tenure based on their churn status, we can see tha
 
 
 ```python
-ax = sns.histplot(data = df, x = 'tenure', hue = 'Churn', kde = True, element = 'step', palette=[blue, red])
+ax = sns.histplot(data = df, x = 'tenure', hue = 'Churn', kde = True, element = 'step', palette=[blue, red], stat='percent')
 ax.set_title('Distribution of Tenure', fontsize=20, pad=30, fontdict={'weight': 'bold'})
 ax.set_xlabel('Tenure', fontsize=16)
-ax.set_ylabel('Count', fontsize=18)
+ax.set_ylabel('Percent', fontsize=18)
 plt.show()
 ```
 
 
     
-![png](img/output_81_0.png)
+![png](/img/output_79_0.png)
     
 
 
-In the histogram above, we can see that the distribution of the tenure of customers who did not churn takes the shape of the letter "U", meaning that the distribution spikes high at the lower and higher end of the distribution. As for the distribution of the tenure of customers who churned, it has a high count at the very low end of the distribution and decreases exponentially as it reaches the end of the distribution.
+In the histogram above, we can see that the distribution of the tenure of customers who did not churn takes the shape of the letter "U", meaning that the distribution spikes high at the lower and higher end of the distribution. As for the distribution of the tenure of customers who churned, it has a high frequency at the very low end of the distribution and decreases exponentially as it reaches the higher end of the distribution.
 
 
 ```python
@@ -1547,11 +1543,11 @@ plt.show()
 
 
     
-![png](img/output_83_0.png)
+![png](/img/output_81_0.png)
     
 
 
-In the graph above, we plotted all the data for each monthly charge in relation to tenure with the color blue for the customers who did not churn and the color red for customers who churned. For both the line plots, it looks like the line plot for the customers who churned had just a higher intercept, with similar gradient.
+In the graph above, we plotted all the data for each monthly charge in relation to tenure with the color blue for the customers who did not churn and the color red for customers who churned. With both lines visualized, it seems that the line plot for the customers who churned has just a higher intercept but with similar gradient.
 
 
 ```python
@@ -1563,7 +1559,7 @@ plt.show()
 
 
     
-![png](img/output_85_0.png)
+![png](/img/output_83_0.png)
     
 
 
@@ -1571,11 +1567,11 @@ Meanwhile, when plotting total charges in relation to tenure, we can see that th
 
 # DATA PREPROCESSING
 
-Previously, we were cleaning the data set so that the EDA would run smoothly. In the data preprocessing section, our goal is to make sure that the data can be understood by the machine learning model. Machine learning models can only process numerical data. Meanwhile, in our data set, we have a mix categorical data and numerical data, and we need to make sure that they are treated differently. Therefore, we need to transform the data into the correct form using their own methods.
+Previously, we were cleaning the data set so that the EDA would run smoothly. In this data preprocessing section, our goal is to make sure that the data can be understood by the machine learning model. Machine learning models can only process numerical data. Meanwhile, in our data set, we have a mix of categorical data and numerical data, and we need to make sure that they are treated differently. Therefore, we need to transform them into the correct form using their own separate methods.
 
 ## ENCODING
 
-For columns with categorical data, we need to encode them in order to transform the data into numerical form. In this project, we will be using the label encoder package. Even though the data is not ordinal, I chose to use the label encoder and not the one-hot encoder because the dimension of the dataset is already horizontally quite wide, and one-hot encoder would expand the existing categorical columns even more, thus taking more memory when in the future processes.
+For columns with categorical data, we need to encode the, which is essentially transforming the data into numerical form. In this project, we will be using the label encoder method. Even though the data is not ordinal, we chose to use the label encoder and not the one-hot encoder because the dimension of the dataset is already quite wide, and one-hot encoder would horizontally expand the existing categorical columns even more, thus taking more memory when proceeding with the coming processes.
 
 
 ```python
@@ -1585,7 +1581,7 @@ num_cols = ['tenure', 'MonthlyCharges', 'TotalCharges']
 cat_cols = [col for col in data.columns if col not in num_cols]
 ```
 
-First off, we drop the customer ID column because by common sense it should be of no value to the machine learning model. Then we define the columns that are categorical and numericals. Since the label encoder is utilized to process categorical data, only the columns with categorical data go through this process.
+First off, we drop the customer ID column because by common sense it should be of no value to the machine learning model. We then define the columns that are categorical and numericals to separate them for processing. Since the label encoder is utilized to process categorical data, only the columns with categorical data will be processed by the label encoder.
 
 
 ```python
@@ -1752,19 +1748,13 @@ data.head()
 
 
 
-With the observation above, we see that the data of the categorical columns have been changed into integers, which the machine learning models are able to read.
-
-
-```python
-# data[cat_cols] = data[cat_cols].astype('category')
-# data.dtypes
-```
+With the observation above, we see that the data of the categorical columns have been changed into integers, which the machine learning models are now able to read.
 
 ## SCALING
 
-Once the categorical columns have been taken care of, the numerical columns also need to be treated. The numerical columns in this data set are tenure, monthly charges, and total charges, and all of their values have a different range. Most machine learning models need to compute the Euclidean distance between two points, however, if the magnitude of the numerical data are different, the features with higher magnitude carry more weight in the calculations. This is where we need to scale our data. By scaling our data, all the features are brought to the same level of magnitude.
+Once the categorical columns have been taken care of, the numerical columns also need to be treated. The numerical columns in this data set are tenure, monthly charges, and total charges, and all of their values have a different range. Most machine learning models need to compute the Euclidean distance between two points, however, if the magnitude of the numerical data are different, the features with higher magnitude carry more weight in the calculations. This is where we need to scale our data, as by scaling our data, all the features are brought to the same level of magnitude.
 
-In the project, we will use the MinMaxScaler where our numerical data will be transformed to a value between 0 and 1. The goal in mind when deciding this scaling method is to have only absolute values in our dataset, which the MinMaxScaler can achieve.
+In this project, we will use the MinMaxScaler where our numerical data will be transformed to a value between 0 and 1. The goal in mind when deciding this scaling method is to have only absolute values in our dataset, which the MinMaxScaler can achieve.
 
 
 ```python
@@ -2083,7 +2073,7 @@ With the observation above, we now see that our numerical data have been transfo
 
 ## IMBALANCED DATA
 
-In our EDA, one of the graphs that was visualized was the comparison between the number of customers who churned and customers who did not churn. Below, we bring up the graph again to emphasize that there is quite a big difference in the numbers, namely that there are significantly less customers who churned. Since the column 'Churn' is the target variable in this project, this will cause an issue with our machine learning results -- the model will be biased towards the class which has more data because there is not enough data to distinguish the other class. To fix this issue we will use over-sampling technique called SMOTE to generate more data for the class with less data.
+In our EDA, one of the graphs that was visualized was the comparison between the number of customers who churned and customers who did not churn. Below, we bring up the graph again to emphasize that there is quite a big difference in the numbers, namely that there are significantly less customers who churned. Since the column 'Churn' is the target variable in this project, this will cause an issue with our machine learning results -- the model will be biased towards the class which has more data because there is not enough data to distinguish the other class. To fix this issue we will use an over-sampling technique called SMOTE to generate more data for the class with less data. This issue is called data imbalance.
 
 SMOTE -- Synthetic Minority Over-sampling Technique -- is a technique that generates more data for the minority class based on nearest neighbors judged by Euclidean Distance between data points, which aims to balance the data in the target variable. For this particular case, SMOTE-NC is used because there are both Nominal and Continuous features in this data set, which is what the -NC stands for.
 
@@ -2105,7 +2095,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](img/output_103_0.png)
+![png](/img/output_100_0.png)
     
 
 
@@ -2153,7 +2143,7 @@ ax.margins(y = 0.2)
 
 
     
-![png](img/output_107_0.png)
+![png](/img/output_104_0.png)
     
 
 
@@ -2484,20 +2474,20 @@ data_res.dtypes
     PaymentMethod       float64
     MonthlyCharges      float64
     TotalCharges        float64
-    Churn                 int64
+    Churn                 int32
     dtype: object
 
 
 
-After over-sampling the data in our target variable, we now see that there is an equal number of data for customers who churned and who did not. Another observation is that all of our features are now in numerical form, which means that they are ready to be processed by machine learning models.
+After over-sampling the data in our target variable, we now see that there is an equal number of data for customers who churned and who did not. Another observation is that all of our features are now in numerical form, which means that the data that we have now are ready to be processed by machine learning models.
 
 # FEATURE SELECTION
 
-Now that we have readied the data for the machine learning models, we will have to choose the features that will positively impact our predictions. This process is called feature selection. It aims to reduce the dimension of the data that will be processed by machine learning model and in turn decreases computational cost. Not only that, it could also help improve the performance of the model. Below are some considerations of which features will be used for the machine learning model.
+Now that we have readied the data for the machine learning models, we will have to choose the features that will positively impact our predictions, as not all of the features in our data set may be useful in correctly predicting outcomes. This process is called feature selection. Not only does it aim to reduce the dimension of the data that will be processed by machine learning model and in turn decreases computational cost but also it could also help improve the performance of the model. Below are some considerations of which features should be used for the machine learning model.
 
 ## SPLITTING DATA
 
-Before we proceed to select our features, it is advised that our data is split into training and testing set first. This is done in order to prevent information leakage from the test set. We will not use the test set in any stage of the model building including feature selection.
+Before we proceed to select our features, it is advised that our data is split into training and testing set first. This is done in order to prevent information leakage from the test set. With that in mind, we will not use the test set in any stage of the model building including feature selection.
 
 
 ```python
@@ -2508,7 +2498,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, rand
 
 ## FEATURE CORRELATION
 
-The first consideration we look at to remove our features is to see if any of our features correlate with each other. When features are correlated, this indicates that there is a linear dependency. When two features have high correlation, we can drop one of them.
+The first consideration we look at when removing our features is to see if any of our features correlate with each other. When features are correlated, this indicates that there is a linear dependency. When two features have high correlation, we can drop one of them.
 
 
 ```python
@@ -2527,7 +2517,7 @@ sns.heatmap(data_test.corr(), linewidth=0.1, square=True, cmap='magma')
 
 
     
-![png](img/output_118_1.png)
+![png](/img/output_115_1.png)
     
 
 
@@ -2577,7 +2567,7 @@ plt.show()
 
 
     
-![png](img/output_125_0.png)
+![png](/img/output_122_0.png)
     
 
 
@@ -2609,13 +2599,13 @@ ax = sns.barplot(y=[X_train.columns.values[x] for x in ix], x=[importance[x] for
 
 
     
-![png](img/output_129_0.png)
+![png](/img/output_126_0.png)
     
 
 
 ## BORUTA
 
-Boruta is a random based forest method that iteratively remove features, leaving only the important features at the end. TThe uniqueness of the boruta method is that it creates shuffled copies of all features (shadow features) before training a random forest classifier and measuring the feature importance. With each iteration, the algorithm validates the importance of a feature by comparing the scores of its iterations, constantly removing features that are not important. Below, features that are ranked number 1 are the most important features. Features ranked number 2 are optional to use, but the rest of the features can be left out.
+Boruta is a Random Forest based method that iteratively remove features, leaving only the important features at the end. TThe uniqueness of the boruta method is that it creates shuffled copies of all features (shadow features) before training a random forest classifier and measuring the feature importance. With each iteration, the algorithm validates the importance of a feature by comparing the scores of its iterations, constantly removing features that are not important. Below, features that are ranked number 1 are the most important features. Features ranked number 2 are optional to use, but the rest of the features can be left out.
 
 
 ```python
@@ -2633,7 +2623,7 @@ ax = sns.scatterplot(y=[col for col in X_train.columns.values], x=brt_ranking, h
 
 
     
-![png](img/output_133_0.png)
+![png](/img/output_130_0.png)
     
 
 
@@ -2667,6 +2657,8 @@ selected_features
 # MACHINE LEARNING MODEL
 
 After deciding the features to be selected, we move on to training the data on a machine learning algorithm from which make our predictions. As a preliminary test, we will be using different classification models with their default parameters to compare how well each model works with the data set that we have. These classification models are Logistic Regression, Naive Bayes, Stochastic Gradient Descent, K-Nearest Neighbors, Decision Tree, Random Forest, and Support Vector Machine. The models will take turns to fit the data in the loop and an accuracy score will be the output.
+
+Note that beforehand, we have already split our data and set out a separate test set. We will now be using the test set and feed it to the machine learning model as new data that the model has never seen before to see how the model performs on an entirely new set of data.
 
 
 ```python
@@ -2720,16 +2712,16 @@ for i, model in enumerate(models):
 
     LogisticRegression() : 0.7835011618900077
     GaussianNB() : 0.774593338497289
-    SGDClassifier() : 0.7769171185127808
+    SGDClassifier() : 0.7621998450813323
     KNeighborsClassifier() : 0.7955073586367157
-    DecisionTreeClassifier() : 0.7532920216886135
-    RandomForestClassifier() : 0.8175832687838884
+    DecisionTreeClassifier() : 0.7563903950426026
+    RandomForestClassifier() : 0.8168086754453912
     SVC() : 0.7827265685515105
     
 
 ## HYPERPARAMETER TUNING
 
-From the list of accuracy scores produced by the different models, we can see that the Random Forest Classifier is most superior in terms of its accuracy score. For that reason only, we will continue with the Random Forest Classifier and tune its parameters for the sake of improvement. The process of hyperparameter tuning aims to find the optimal parameter values for the model. To achieve this, we will use the GridSearchCV method, which exhaustively attempts all possible combinations that we provide it with. Not only that, this method also comes with cross-validation which estimates how well the model performs on a new data by switching test sets a number of times.
+From the list of accuracy scores produced by the different models, we can see that the Random Forest Classifier is most superior in terms of its accuracy score. For that reason only, we will continue with the Random Forest Classifier and tune its parameters to improve its prediction. The process of hyperparameter tuning aims to find the optimal parameter values for the model. To achieve this, we will use the GridSearchCV method, which exhaustively attempts all possible combinations that we provide it with. Not only that, this method also comes with cross-validation which estimates how well the model performs on new data by switching test sets a number of times.
 
 
 ```python
@@ -2759,11 +2751,6 @@ grid_rf.fit(X_train1, y_train1)
 ```
 
     Fitting 5 folds for each of 36 candidates, totalling 180 fits
-    
-
-    [Parallel(n_jobs=-1)]: Using backend LokyBackend with 4 concurrent workers.
-    [Parallel(n_jobs=-1)]: Done  42 tasks      | elapsed:  1.2min
-    [Parallel(n_jobs=-1)]: Done 180 out of 180 | elapsed:  4.9min finished
     
 
 
@@ -2805,7 +2792,7 @@ plt.show()
 
 
     
-![png](img/output_149_0.png)
+![png](/img/output_146_0.png)
     
 
 
@@ -2837,7 +2824,7 @@ Using different combinations from the values in the confusion matrix, many diffe
 
 # DISCOUNT VALUE
 
-In the beginning of the project, we mentioned that the telecommunication company is looking to create a discount program that will still be profitable for the company. Using the machine learning model that we created in the previous section, we are now already able to predict which customers are likely to churn. We first need to graph a line of best fit where the x axis is tenure in years and the y axis is the annual charge of customers. To assess if a customer who is predicted to churn is worth retending by providing a discount, the particular customer's tenure in years and annual charge will be plotted on the same graph, and the distance between that customer's data point and the line of best fit will be calculated, resulting in the maximum amount of discount that can be provided for that particular customer, that is, if the data point is above the line of best fit. Otherwise, that means the customer is of no value, and retending the customer would not be profitable in that case.
+In the beginning of the project, we mentioned that the telecommunication company is looking to create a discount program that will still be profitable for the company. Using the machine learning model that we created in the previous section, we are now already able to predict which customers are likely to churn. We first need to graph a line of best fit where the x axis is tenure in years and the y axis is the annual charge of customers. To assess if a customer who is predicted to churn is worth retending by providing a discount, the particular customer's tenure in years and annual charge will be plotted on the same graph, and the distance between that customer's data point and the line of best fit will be calculated, resulting in the maximum amount of discount that can be provided for that particular customer, that is, if the data point is above the line of best fit. If the data point falls below the line of best fit, that means the customer is of no value, and retending the customer would not be profitable in that case as the company is already in the red for maintaining the customer.
 
 
 ```python
@@ -2893,11 +2880,11 @@ plt.show()
 
 
     
-![png](img/output_157_0.png)
+![png](/img/output_154_0.png)
     
 
 
-We managed to create the line of best fit that we intended to get. Now let us grab a couple of customers' data from our data set as an example where both have already churned. We will take one customer who is profitable for retending and one customer who is not.
+We managed to create the line of best fit that we intended to get. Now let us grab a couple of customers' data from our data set as an example where both have already churned. We will take one customer who is profitable for retention and one customer who is not profitable for retention to see the difference in their calculations.
 
 
 ```python
@@ -3254,13 +3241,13 @@ print('Distance for customer #2:', cust2['distance'])
 plt.show()
 ```
 
-    Distance for customer #1: 541.8888578283457
-    Distance for customer #2: -648.7938300861074
+    Distance for customer #1: 541.8888578283439
+    Distance for customer #2: -648.7938300861083
     
 
 
     
-![png](img/output_162_1.png)
+![png](/img/output_159_1.png)
     
 
 
@@ -3274,8 +3261,15 @@ We were able to achieve our first objective which was to predict customers who a
 
 Our second objective to determine customer's value for retention program was also completed by graphing a line of best fit through data points of annual charges against tenure in years and then calculating the distance of the customer's data point and the line of best fit to find the maximum retention cost to still make profit.
 
+In the data processing section, we used LabelEncoder to transform categorical data and MinMaxScaler to scale numerical data, however, the results should be somewhat different if the one-hot encoder and another scaling method were used instead.
+
 ## POSTSCRIPT
 
 Hey! I hoped you enjoyed reading through my first ever data science project. Please be aware that this project was created by an aspiring data scientist (in other words a total newbie), so be sure to doubt all the explanations and methods you see here. I have yet to find the best practices, and I have yet to fully grasp all the concepts. If anything, your comment and feedback and critique will be much appreciated -- I'd be glad to learn from you!
 
 Another thing I'd like to add is that I would very much love if there is a mentor out there who would take me under their wing (apprenticeship), so feel free to hit me up if you're interested :)
+
+Here are my links:
+- [LinkedIn](https://www.linkedin.com/in/fnurrahmadi/)
+- [GitHub](https://github.com/fnurrahmadi)
+- [Kaggle](https://www.kaggle.com/hidious)
