@@ -3,12 +3,14 @@
 An Unofficial REST API for [vlr.gg](https://www.vlr.gg/), a site for Valorant Esports match and news coverage.
 
 Built by [Andre Saddler](https://github.com/rehkloos/)
+
 Original GitHub: [Link](https://github.com/axsddlr/vlrggapi)
 
 [![heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 Edited by [Fakhri Nurrahmadi](https://github.com/fnurrahmadi) - first update on 2021-12-24
-Editid GitHub: [Link](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/vlrgg%20Unofficial%20REST%20API%20-%20updated)
+
+Edited GitHub: [Link](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/vlrgg%20Unofficial%20REST%20API%20-%20updated)
 
 ## Current Endpoints
 
