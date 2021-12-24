@@ -327,7 +327,9 @@ class Vlr:
                     'total_first_kills': totalfk,
                     'total_first_deaths': totalfd,
                     
-                    "map_id": map_id
+                    "map_id": map_id,
+                    "agent": agent,
+                    "region": region
                 }
             )
         segments = {"status": status, "segments": result}
