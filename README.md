@@ -23,7 +23,7 @@ This repository is created to store the projects I have completed in hopes of bu
 
 In the graph above, a line of best fit is plotted based on the overall tenure in years and charges per year. To find the maximum amount that can be given to a customer, we can find the distance between the charges per year of the customer and the charges on the line of best fit at a particular tenure. A positive distance indicates that the maximum amount of discount we can give them. Meanwhile, a negative distance indicates that the customer is not profitable for retention and their value is less than the overall customers.
 
-## [Project 2: House Prices Prediction - Kaggle Competition - Regression](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/House%20Prices%20Prediction)
+## [Project 2: House Prices Prediction - Regression](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/House%20Prices%20Prediction)
 - Predicting house prices using a regression model
 - Performed Exploratory Data Analysis (EDA) to find trends and devise a plan for treating anomalies
 - Engineered features based on EDA performed and selected important features for the model
