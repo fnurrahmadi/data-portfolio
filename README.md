@@ -28,4 +28,4 @@ In the graph above, a line of best fit is plotted based on the overall tenure in
 - Performed Exploratory Data Analysis (EDA) to find trends and devise a plan for treating anomalies
 - Engineered features based on EDA performed and selected important features for the model
 - Tuning regression model with Random Search to efficiently get the best model parameters
-- Submitted predictions to be scored and achieved an RMSE score of 0.26592
+- Submitted predictions to be scored and achieved an RMSE score of 0.24951
