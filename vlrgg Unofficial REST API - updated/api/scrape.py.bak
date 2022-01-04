@@ -702,7 +702,7 @@ class Vlr:
             
             segments = {"status": status, "segments": result}
         
-        elif type.lower() != 'bo1':    
+        elif type.lower() == 'bo3':    
         
             # find other maps
             maps = []
