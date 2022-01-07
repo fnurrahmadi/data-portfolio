@@ -24,8 +24,13 @@ This repository is created to store the projects I have completed in hopes of bu
 In the graph above, a line of best fit is plotted based on the overall tenure in years and charges per year. To find the maximum amount that can be given to a customer, we can find the distance between the charges per year of the customer and the charges on the line of best fit at a particular tenure. A positive distance indicates that the maximum amount of discount we can give them. Meanwhile, a negative distance indicates that the customer is not profitable for retention and their value is less than the overall customers.
 
 ## [Project 2: House Prices Prediction - Regression](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/House%20Prices%20Prediction)
-- Predicting house prices using a regression model
+- Predicted house prices using a regression model and achieved an RMSE score of 0.24951
 - Performed Exploratory Data Analysis (EDA) to find trends and devise a plan for treating anomalies
 - Engineered features based on EDA performed and selected important features for the model
-- Tuning regression model with Random Search to efficiently get the best model parameters
-- Submitted predictions to be scored and achieved an RMSE score of 0.24951
+- Tuned regression model with Random Search to efficiently get the best model parameters
+
+## [Project 3: Website Redesign - A/B Testing](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/Website%20Redesign%20AB%20Testing)
+- Calculated the baseline conversion rate from the control group and the conversion rate of the treatment groups
+- Generated bootstrap samples for the visualization of the differences of the conversion rates
+- Conducted hypothesis tests and evaluate redesigns based on the p-value and statistical power of the tests
+- Determine the best performing website redesign based on the test results
