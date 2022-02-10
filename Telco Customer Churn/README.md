@@ -62,7 +62,7 @@ All of these models should perform just as well as they were have been validated
 
 Using the selected machine learning model, we are able to predict when customers are churning. As previously stated in the introduction, the company wants to make sure that the customer is worth retaining. The proposed method of determing the customer value is calculating the vertical distance between the customer's data point and the regression line of annual charges on tenure in years, otherwise known as the residual values. The residual value determines the maximum amount of discount that can still be provided for a customer to end up profitable. A positive value indicates that there is room to give a profitable discount, while a negative value indicates this means that the customer is in the red and is low in terms of customer value.
 
- ![residual](/img/residual.jpg)
+ ![residual](https://raw.githubusercontent.com/fnurrahmadi/data-science-portfolio/main/Telco%20Customer%20Churn/img/residual.jpg)
 
 The graph above shows two customer's data points:
 - Green Dot: a customer whose residual is positive
