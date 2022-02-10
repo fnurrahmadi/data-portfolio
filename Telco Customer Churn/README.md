@@ -1,7 +1,7 @@
 # TELCO CUSTOMER CHURN
 
-[Click here to open Notebook](https://github.com/fnurrahmadi/data-science-portfolio/blob/main/Telco%20Customer%20Churn/revised.ipynb)
-[Click here to view Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
+- [Click here to open Notebook](https://github.com/fnurrahmadi/data-science-portfolio/blob/main/Telco%20Customer%20Churn/revised.ipynb)
+- [Click here to view Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
 
 It's no surprise to say that companies suffer when their customers cancel their subscription and stop using their services. A particular telecommunication company requires help in coming up with a business solution in order to solve their issue with customers churning. Apart from that, the company would also like to know if a customer is worth retaining. Thus, the objectives in this project are as follows:
 - Predicting customers who are likely to churn
