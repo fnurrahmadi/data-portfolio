@@ -28,7 +28,7 @@ Predicting NBA MVP votes based on MVP votes from past seasons and player stats
 - ## [Website Redesign A/B Testing](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/Website%20Redesign%20AB%20Testing)
 Hypothesis testing between the control group and the treatment groups and determining the best performing website redesign
 
-![kde of bootstrap samples](https://raw.githubusercontent.com/fnurrahmadi/data-science-portfolio/main/Website%20Redesign%20AB%20Testing/bootstrap%20samples.png)
+![kde of bootstrap samples](https://raw.githubusercontent.com/fnurrahmadi/data-science-portfolio/main/AB%20Testing/Website%20Redesign%20AB%20Testing/bootstrap%20samples.png)
 
 # Contact
 If you have questions or feedback on any of the projects listed, feel free to reach out to me via:
