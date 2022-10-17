@@ -17,7 +17,7 @@ knowledge and skills and to continue building towards a solid data skillset.
 - **Git**
 
 # [Projects](https://github.com/fnurrahmadi/data-portfolio)
-Below are listed my projects pertaining data science, data analysis, business intelligence, and other data-related works.
+Below are listed my projects pertaining to data science, data analysis, business intelligence, and other data-related works.
 
 ## - [Data Science](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Science)
 - [E-Commerce Shipping Data](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Science/E-Commerce%20Shipping%20Data) - a machine learning solution to mitigate churn rate from late shipping
