@@ -1,43 +1,45 @@
-# [Data Science Portfolio](https://fnurrahmadi.github.io/data-science-portfolio/)
+# [My Portfolio](https://fnurrahmadi.github.io/data-portfolio/)
 
-My name is Fakhri Nurrahmadi. I am an aspiring Data Scientist. This is a repository containing my data science and machine learning projects. These projects are done for academic, self-developing, and professional purposes.
+Greetings! My name is Fakhri Nurrahmadi.
+I am a Data Analyst / Data Scientist with roughly 1 year of experience, most recently in the finance /
+collection industry, with a Data Science Certification. Actively looking for new challenges to implement prior
+knowledge and skills and to continue building towards a solid data skillset.
 
-[View GitHub Page Here](https://fnurrahmadi.github.io/data-science-portfolio/)
+[View GitHub Page Here](https://fnurrahmadi.github.io/data-portfolio/)
 
 ## Tool of Work
-- **Python** (Pandas, Numpy, Scipy, Statsmodels, Scikit-learn, Matplotlib, Seaborn, BeautifulSoup)
-- **SQL** (PostgreSQL)
+- **Microsoft Excel**
+- **Google Sheets**
+- **Python** (pandas, matplotlib, seaborn, scipy, statsmodels, scikit-learn, BeautifulSoup)
+- **SQL** (PostgreSQL, Microsoft SQL Server, BigQuery)
 - **Tableau**
+- **Google Data Studio**
+- **Git**
 
-# [Contents](https://github.com/fnurrahmadi/data-science-portfolio)
+# [Projects](https://github.com/fnurrahmadi/data-portfolio)
+Below are listed my projects pertaining data science, data analysis, business intelligence, and other data-related works.
 
-- ## [Telco Customer Churn Prediction and Retention](https://github.com/fnurrahmadi/FN-Repo/tree/main/Telco%20Customer%20Churn)
-Predicting customer churn in a telecommunication company and devising a profitable customer retention program based on the residual of the regression line between annual tenure and annual charge.
+## [Data Science](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Science)
+- [E-Commerce Shipping Data](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Science/E-Commerce%20Shipping%20Data) - a machine learning solution to mitigate churn rate from late shipping
+- [House Prices Prediction](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Science/House%20Prices%20Prediction) - a regression model to estimate house prices based on house features
+- [Telco Customer Churn](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Science/Telco%20Customer%20Churn) - a classification model to predict churning customers and retention program
 
-![line of best fit with data points](https://raw.githubusercontent.com/fnurrahmadi/data-science-portfolio/edd9f521ac68ccb43fa36fc4ac00994bf0cdc4f3/Telco%20Customer%20Churn/img/output_159_1.png)
+## [Data Analysis](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Analysis)
+- [Website Redesign AB Testing](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Analysis/Website%20Redesign%20AB%20Testing) - AB testing website redesign
 
-- ## [House Prices Prediction](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/House%20Prices%20Prediction)
-Predicting house prices from a wide dataset using feature engineering techniques and estimating the price of a house based on its engineered features
+## [Business Intelligence](https://github.com/fnurrahmadi/data-portfolio/tree/main/Business%20Intelligence)
 
-- ## [Car Prices Prediction](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/Car%20Price%20Prediction)
-Predicting the prices of used cars for a car dealership to help the sales team sell cars at reasonable prices and improve overall sales
-
-- ## [NBA MVP Prediction](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/Car%20Price%20Prediction)
-Predicting NBA MVP votes based on MVP votes from past seasons and player stats
-
-- ## [Website Redesign A/B Testing](https://github.com/fnurrahmadi/data-science-portfolio/tree/main/Website%20Redesign%20AB%20Testing)
-Hypothesis testing between the control group and the treatment groups and determining the best performing website redesign
-
-![kde of bootstrap samples](https://raw.githubusercontent.com/fnurrahmadi/data-science-portfolio/main/AB%20Testing/Website%20Redesign%20AB%20Testing/bootstrap%20samples.png)
+## [Other Works](https://github.com/fnurrahmadi/data-portfolio/tree/main/Other%20Projects)
+- [Web Scraping VLR.gg](https://github.com/fnurrahmadi/data-portfolio/tree/main/Other%20Projects/Web%20Scraping/vlrgg%20Unofficial%20REST%20API%20-%20updated) - web scraping VLR.gg website
 
 # Contact
-If you have questions or feedback on any of the projects listed, feel free to reach out to me via:
+Feel free to reach out to me via:
 - [Gmail](mailto:fnurrahmadi@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/fnurrahmadi/)
 - [Kaggle](https://www.kaggle.com/hidious)
 - [GitHub](https://github.com/fnurrahmadi)
 
 ## Support
-If you like what you see and you want to support my work, feel free to show some love by tipping me here:
+If you like what you see and want to support my work, feel free to show some love by tipping me here:
 - [Ko-fi](https://ko-fi.com/fnurrahmadi)
 - [Saweria](https://saweria.co/hidious)
