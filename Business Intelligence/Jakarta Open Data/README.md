@@ -1,4 +1,4 @@
-# Jakarta Open Data
+# [Jakarta Open Data](https://datastudio.google.com/reporting/18b51ab4-5b0f-4f1b-a0ef-587bd8203399/page/huv4C)
 
 Jakarta Open Data is a web portal created by the government to supply accessible data pertaining to the populace of Jakarta. In this particular project, I acquired data related to population and created a dashboard using Google Data Studio.
 
@@ -29,6 +29,6 @@ Since the data comes in different files, all the json files are read and appende
 
 Using gspread, the data is uploaded into a Google Sheets file that is stored within Google Drive. The upload process uses a separate credential file to make sure that the Drive and its components are kept safe -- and obviously the credential file is also not uploaded here on github. The method that which the upload process executes is to overwrite all the rows on the Google Sheets file each time an update is run.
 
-## Dashboarding
+## Dashboard
 
 The Google Data Studio dashboard reads its data from the Google Sheets file. The question is -- what information are you looking to find from the data?
