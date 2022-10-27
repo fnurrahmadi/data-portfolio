@@ -30,6 +30,7 @@ Below are listed my projects pertaining to data science, data analysis, business
 ## - [Business Intelligence](https://github.com/fnurrahmadi/data-portfolio/tree/main/Business%20Intelligence)
 - [Tableau Page](https://public.tableau.com/app/profile/fakhri.nurrahmadi) - all public dashboards created using Tableau
 - [Jakarta Open Data](https://github.com/fnurrahmadi/data-portfolio/tree/main/Business%20Intelligence/Jakarta%20Open%20Data) - Jakarta Open Data dashboard developed with Google Data Studio, Python, and Sheets
+- [AdventureWorks] - end-to-end business intelligence process (coming soon)
 
 ## - [Other Works](https://github.com/fnurrahmadi/data-portfolio/tree/main/Other%20Projects)
 - [Web Scraping VLR.gg](https://github.com/fnurrahmadi/data-portfolio/tree/main/Other%20Projects/Web%20Scraping/vlrgg%20Unofficial%20REST%20API%20-%20updated) - web scraping VLR.gg website
