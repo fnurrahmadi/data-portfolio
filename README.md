@@ -7,7 +7,7 @@ knowledge and skills and to continue building towards a solid data skillset.
 
 [View GitHub Page Here](https://fnurrahmadi.github.io/data-portfolio/)
 
-## Tool of Work
+## Tools of Work
 - **Microsoft Excel**
 - **Google Sheets**
 - **Python** (pandas, matplotlib, seaborn, scipy, statsmodels, scikit-learn, BeautifulSoup)
@@ -25,6 +25,7 @@ Below are listed my projects pertaining to data science, data analysis, business
 - [Telco Customer Churn](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Science/Telco%20Customer%20Churn) - a classification model to predict churning customers and retention program
 
 ## - [Data Analysis](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Analysis)
+- [Cohort Analysis - Sales](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Analysis/Cohort%20Analysis%20-%20Sales) - Cohort Analysis on Sales
 - [Website Redesign AB Testing](https://github.com/fnurrahmadi/data-portfolio/tree/main/Data%20Analysis/Website%20Redesign%20AB%20Testing) - AB testing website redesign
 
 ## - [Business Intelligence](https://github.com/fnurrahmadi/data-portfolio/tree/main/Business%20Intelligence)
