@@ -33,8 +33,11 @@ Below are listed my projects pertaining to data science, data analysis, business
 - [Jakarta Open Data](https://github.com/fnurrahmadi/data-portfolio/tree/main/Business%20Intelligence/Jakarta%20Open%20Data) - Jakarta Open Data dashboard developed with Google Data Studio, Python, and Sheets
 - [AdventureWorks] - end-to-end business intelligence process (coming soon)
 
-## - [Other Works](https://github.com/fnurrahmadi/data-portfolio/tree/main/Other%20Projects)
-- [Web Scraping VLR.gg](https://github.com/fnurrahmadi/data-portfolio/tree/main/Other%20Projects/Web%20Scraping/vlrgg%20Unofficial%20REST%20API%20-%20updated) - web scraping VLR.gg website
+## - [Web Scraping](https://github.com/fnurrahmadi/data-portfolio/tree/main/Web%20Scraping)
+- [Subslikescripts](https://github.com/fnurrahmadi/data-portfolio/tree/main/Web%20Scraping/Subslikescript) - scraping movie titles and scripts using BeautifulSoup
+- [Audible](https://github.com/fnurrahmadi/data-portfolio/tree/main/Web%20Scraping/Audible) - scraping audio books on Audible using Selenium
+- [Football Match Results](https://github.com/fnurrahmadi/data-portfolio/tree/main/Web%20Scraping/Adamchoi) - scraping football match results using Selenium
+- [Web Scraping VLR.gg](https://github.com/fnurrahmadi/data-portfolio/tree/main/Web%20Scraping/vlrgg%20Unofficial%20REST%20API%20-%20updated) - web scraping VLR.gg website
 
 # Contact
 Feel free to reach out to me via:
