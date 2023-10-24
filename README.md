@@ -1,9 +1,6 @@
 # [My Portfolio](https://fnurrahmadi.github.io/data-portfolio/)
 
-Greetings! My name is Fakhri Nurrahmadi.
-I am a Data Analyst / Data Scientist with roughly 1 year of experience, most recently in the finance /
-collection industry, with a Data Science Certification. Actively looking for new challenges to implement prior
-knowledge and skills and to continue building towards a solid data skillset.
+Data Analyst with a focus on generating value and providing actionable insights from the cleansing, manipulation, and visualization of data using the following tools: Python, SQL, Power BI, and Excel. Confident in communicating findings and creative in discovering solutions to problems. Proactively looking for challenges and continuous improvement in a lifelong learning journey.
 
 [View GitHub Page Here](https://fnurrahmadi.github.io/data-portfolio/)
 
