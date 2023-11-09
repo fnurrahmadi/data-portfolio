@@ -1,0 +1,398 @@
+[
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Kepulauan Seribu",
+"nama_kecamatan": "Kepulauan Seribu Selatan ",
+"jumlah_kelurahan": 3,
+"jumlah_rw": 13,
+"jumlah_rt": 75,
+"jumlah_kk": 4378
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Kepulauan Seribu",
+"nama_kecamatan": "Kepulauan Seribu Utara ",
+"jumlah_kelurahan": 3,
+"jumlah_rw": 11,
+"jumlah_rt": 52,
+"jumlah_kk": 2886
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Pusat",
+"nama_kecamatan": "Gambir",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 44,
+"jumlah_rt": 484,
+"jumlah_kk": 32827
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Pusat",
+"nama_kecamatan": "Sawah Besar",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 49,
+"jumlah_rt": 597,
+"jumlah_kk": 45436
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Pusat",
+"nama_kecamatan": "Kemayoran",
+"jumlah_kelurahan": 8,
+"jumlah_rw": 77,
+"jumlah_rt": 1031,
+"jumlah_kk": 79174
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Pusat",
+"nama_kecamatan": "Senen",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 48,
+"jumlah_rt": 515,
+"jumlah_kk": 41618
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Pusat",
+"nama_kecamatan": "Cempaka Putih",
+"jumlah_kelurahan": 3,
+"jumlah_rw": 30,
+"jumlah_rt": 376,
+"jumlah_kk": 31168
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Pusat",
+"nama_kecamatan": "Menteng",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 38,
+"jumlah_rt": 425,
+"jumlah_kk": 28731
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Pusat",
+"nama_kecamatan": "Tanah Abang",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 67,
+"jumlah_rt": 724,
+"jumlah_kk": 57096
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Pusat",
+"nama_kecamatan": "Johar Baru",
+"jumlah_kelurahan": 4,
+"jumlah_rw": 40,
+"jumlah_rt": 558,
+"jumlah_kk": 43440
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Utara",
+"nama_kecamatan": "Penjaringan",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 71,
+"jumlah_rt": 850,
+"jumlah_kk": 95248
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Utara",
+"nama_kecamatan": "Tanjung Priok",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 103,
+"jumlah_rt": 1269,
+"jumlah_kk": 120012
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Utara",
+"nama_kecamatan": "Koja",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 82,
+"jumlah_rt": 906,
+"jumlah_kk": 96497
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Utara",
+"nama_kecamatan": "Cilincing",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 86,
+"jumlah_rt": 1012,
+"jumlah_kk": 118946
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Utara",
+"nama_kecamatan": "Pademangan",
+"jumlah_kelurahan": 3,
+"jumlah_rw": 34,
+"jumlah_rt": 434,
+"jumlah_kk": 51342
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Utara",
+"nama_kecamatan": "Kelapa Gading",
+"jumlah_kelurahan": 3,
+"jumlah_rw": 68,
+"jumlah_rt": 707,
+"jumlah_kk": 41128
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Barat",
+"nama_kecamatan": "Cengkareng",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 85,
+"jumlah_rt": 1027,
+"jumlah_kk": 152517
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Barat",
+"nama_kecamatan": "Grogol Petamburan",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 73,
+"jumlah_rt": 868,
+"jumlah_kk": 72138
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Barat",
+"nama_kecamatan": "Taman Sari",
+"jumlah_kelurahan": 8,
+"jumlah_rw": 60,
+"jumlah_rt": 688,
+"jumlah_kk": 41315
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Barat",
+"nama_kecamatan": "Tambora",
+"jumlah_kelurahan": 11,
+"jumlah_rw": 96,
+"jumlah_rt": 1082,
+"jumlah_kk": 82558
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Barat",
+"nama_kecamatan": "Kebon Jeruk",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 70,
+"jumlah_rt": 716,
+"jumlah_kk": 95353
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Barat",
+"nama_kecamatan": "Kali Deres",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 74,
+"jumlah_rt": 748,
+"jumlah_kk": 116688
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Barat",
+"nama_kecamatan": "Palmerah",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 61,
+"jumlah_rt": 712,
+"jumlah_kk": 65547
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Barat",
+"nama_kecamatan": "Kembangan",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 63,
+"jumlah_rt": 617,
+"jumlah_kk": 75557
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Tebet",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 80,
+"jumlah_rt": 939,
+"jumlah_kk": 72859
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Setia Budi",
+"jumlah_kelurahan": 8,
+"jumlah_rw": 52,
+"jumlah_rt": 514,
+"jumlah_kk": 35884
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Mampang Prapatan",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 38,
+"jumlah_rt": 411,
+"jumlah_kk": 46464
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Pasar Minggu",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 65,
+"jumlah_rt": 726,
+"jumlah_kk": 90623
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Kebayoran Lama",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 77,
+"jumlah_rt": 861,
+"jumlah_kk": 92167
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Cilandak",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 46,
+"jumlah_rt": 476,
+"jumlah_kk": 63039
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Kebayoran Baru",
+"jumlah_kelurahan": 10,
+"jumlah_rw": 73,
+"jumlah_rt": 660,
+"jumlah_kk": 47078
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Pancoran",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 43,
+"jumlah_rt": 481,
+"jumlah_kk": 48541
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Jagakarsa",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 54,
+"jumlah_rt": 546,
+"jumlah_kk": 88556
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Selatan",
+"nama_kecamatan": "Pesanggrahan",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 51,
+"jumlah_rt": 530,
+"jumlah_kk": 67855
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Matraman",
+"jumlah_kelurahan": 6,
+"jumlah_rw": 62,
+"jumlah_rt": 798,
+"jumlah_kk": 59365
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Pulo Gadung",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 94,
+"jumlah_rt": 1033,
+"jumlah_kk": 92557
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Jatinegara",
+"jumlah_kelurahan": 8,
+"jumlah_rw": 90,
+"jumlah_rt": 1143,
+"jumlah_kk": 96802
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Kramat Jati",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 65,
+"jumlah_rt": 653,
+"jumlah_kk": 87434
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Pasar Rebo",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 53,
+"jumlah_rt": 525,
+"jumlah_kk": 60091
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Cakung",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 87,
+"jumlah_rt": 987,
+"jumlah_kk": 151703
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Duren Sawit",
+"jumlah_kelurahan": 7,
+"jumlah_rw": 95,
+"jumlah_rt": 1103,
+"jumlah_kk": 120850
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Makasar",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 53,
+"jumlah_rt": 573,
+"jumlah_kk": 60148
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Ciracas",
+"jumlah_kelurahan": 5,
+"jumlah_rw": 49,
+"jumlah_rt": 601,
+"jumlah_kk": 83419
+},
+{
+"tahun": 2014,
+"nama_kabupaten_kota": "Jakarta Timur",
+"nama_kecamatan": "Cipayung",
+"jumlah_kelurahan": 8,
+"jumlah_rw": 56,
+"jumlah_rt": 503,
+"jumlah_kk": 69599
+}
+]

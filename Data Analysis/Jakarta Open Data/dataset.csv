@@ -1,0 +1,397 @@
+tahun,nama_kabupaten_kota,nama_kecamatan,jumlah_kelurahan,jumlah_rw,jumlah_rt,jumlah_kk
+2011,Kepulauan Seribu,Kepulauan Seribu Selatan,3,11,47,2709.0
+2011,Kepulauan Seribu,Kepulauan Seribu Utara,3,13,54,4177.0
+2011,Jakarta Pusat,Gambir,6,46,484,33884.0
+2011,Jakarta Pusat,Sawah Besar,5,49,598,43147.0
+2011,Jakarta Pusat,Kemayoran,8,77,983,76715.0
+2011,Jakarta Pusat,Senen,6,47,513,40120.0
+2011,Jakarta Pusat,Cempaka Putih,3,30,366,30805.0
+2011,Jakarta Pusat,Menteng,5,38,425,28685.0
+2011,Jakarta Pusat,Tanah Abang,7,67,717,55585.0
+2011,Jakarta Pusat,Johar Baru,4,40,558,42128.0
+2011,Jakarta Utara,Penjaringan,5,70,841,91837.0
+2011,Jakarta Utara,Tanjung Priok,7,103,1268,127405.0
+2011,Jakarta Utara,Koja,6,76,835,100570.0
+2011,Jakarta Utara,Cilincing,7,82,964,125642.0
+2011,Jakarta Utara,Pademangan,3,33,421,52976.0
+2011,Jakarta Utara,Kelapa Gading,3,67,698,40909.0
+2011,Jakarta Barat,Cengkareng,6,84,1000,143923.0
+2011,Jakarta Barat,Grogol Petamburan,7,73,863,75438.0
+2011,Jakarta Barat,Taman Sari,8,60,687,45891.0
+2011,Jakarta Barat,Tambora,11,96,1082,86251.0
+2011,Jakarta Barat,Kebon Jeruk,7,70,714,94185.0
+2011,Jakarta Barat,Kalideres,5,74,742,110519.0
+2011,Jakarta Barat,Palmerah,6,61,711,66824.0
+2011,Jakarta Barat,Kembangan,6,62,610,72914.0
+2011,Jakarta Selatan,Tebet,7,80,946,74566.0
+2011,Jakarta Selatan,Setiabudi,8,50,515,37682.0
+2011,Jakarta Selatan,Mampang Prapatan,5,38,410,45852.0
+2011,Jakarta Selatan,Pasar Minggu,7,65,725,90794.0
+2011,Jakarta Selatan,Kebayoran Lama,6,77,856,92949.0
+2011,Jakarta Selatan,Cilandak,5,45,468,65045.0
+2011,Jakarta Selatan,Kebayoran Baru,10,73,658,50941.0
+2011,Jakarta Selatan,Pancoran,6,43,481,48620.0
+2011,Jakarta Selatan,Jagakarsa,6,54,542,83129.0
+2011,Jakarta Selatan,Pesanggrahan,5,51,527,67724.0
+2011,Jakarta Timur,Matraman,6,62,792,63641.0
+2011,Jakarta Timur,Pulo Gadung,7,93,1024,99320.0
+2011,Jakarta Timur,Jatinegara,8,90,1142,100236.0
+2011,Jakarta Timur,Kramat Jati,7,65,654,85199.0
+2011,Jakarta Timur,Pasar Rebo,5,53,527,58686.0
+2011,Jakarta Timur,Cakung,7,84,952,155740.0
+2011,Jakarta Timur,Duren Sawit,7,95,1105,121454.0
+2011,Jakarta Timur,Makasar,5,53,587,60226.0
+2011,Jakarta Timur,Ciracas,5,49,600,82956.0
+2011,Jakarta Timur,Cipayung,8,56,503,67017.0
+2012,Kepulauan Seribu,Kepulauan Seribu Selatan,3,11,52,2460.0
+2012,Kepulauan Seribu,Kepulauan Seribu Utara,3,13,75,3931.0
+2012,Jakarta Pusat,Gambir,6,44,483,32182.0
+2012,Jakarta Pusat,Sawah Besar,5,49,598,43491.0
+2012,Jakarta Pusat,Kemayoran,8,77,986,75081.0
+2012,Jakarta Pusat,Senen,6,48,512,39985.0
+2012,Jakarta Pusat,Cempaka Putih,3,30,366,30223.0
+2012,Jakarta Pusat,Menteng,5,38,425,27838.0
+2012,Jakarta Pusat,Tanah Abang,7,67,715,55234.0
+2012,Jakarta Pusat,Johar Baru,4,40,558,41525.0
+2012,Jakarta Utara,Penjaringan,5,69,832,93565.0
+2012,Jakarta Utara,Tanjung Priok,7,103,1272,186058.0
+2012,Jakarta Utara,Koja,6,81,896,101612.0
+2012,Jakarta Utara,Cilincing,7,86,998,120860.0
+2012,Jakarta Utara,Pademangan,3,33,424,57399.0
+2012,Jakarta Utara,Kelapa Gading,3,68,706,53069.0
+2012,Jakarta Barat,Cengkareng,6,84,999,147998.0
+2012,Jakarta Barat,Grogol Petamburan,7,73,863,75476.0
+2012,Jakarta Barat,Taman Sari,8,60,690,45348.0
+2012,Jakarta Barat,Tambora,11,96,1082,85926.0
+2012,Jakarta Barat,Kebon Jeruk,7,70,714,95048.0
+2012,Jakarta Barat,Kalideres,5,74,742,114673.0
+2012,Jakarta Barat,Palmerah,6,61,711,66240.0
+2012,Jakarta Barat,Kembangan,6,62,610,75009.0
+2012,Jakarta Selatan,Tebet,7,80,936,67366.0
+2012,Jakarta Selatan,Setiabudi,8,50,512,33233.0
+2012,Jakarta Selatan,Mampang Prapatan,5,38,411,46874.0
+2012,Jakarta Selatan,Pasar Minggu,7,65,725,92648.0
+2012,Jakarta Selatan,Kebayoran Lama,6,77,858,92283.0
+2012,Jakarta Selatan,Cilandak,5,46,475,48905.0
+2012,Jakarta Selatan,Kebayoran Baru,10,66,656,49084.0
+2012,Jakarta Selatan,Pancoran,6,43,481,48865.0
+2012,Jakarta Selatan,Jagakarsa,6,54,543,75825.0
+2012,Jakarta Selatan,Pesanggrahan,5,51,527,71240.0
+2012,Jakarta Timur,Matraman,6,62,798,61535.0
+2012,Jakarta Timur,Pulo Gadung,7,93,1026,96194.0
+2012,Jakarta Timur,Jatinegara,8,90,1140,97380.0
+2012,Jakarta Timur,Kramat Jati,7,65,653,86141.0
+2012,Jakarta Timur,Pasar Rebo,5,53,524,59322.0
+2012,Jakarta Timur,Cakung,7,84,949,151652.0
+2012,Jakarta Timur,Duren Sawit,7,95,1101,119690.0
+2012,Jakarta Timur,Makasar,5,53,573,60434.0
+2012,Jakarta Timur,Ciracas,5,49,600,82667.0
+2012,Jakarta Timur,Cipayung,8,56,503,68071.0
+2013,Kepulauan Seribu,Kepulauan Seribu Selatan,3,11,52,2701.0
+2013,Kepulauan Seribu,Kepulauan Seribu Utara,3,13,75,4140.0
+2013,Jakarta Pusat,Gambir,6,44,484,30813.0
+2013,Jakarta Pusat,Sawah Besar,5,49,597,42640.0
+2013,Jakarta Pusat,Kemayoran,8,77,1031,74310.0
+2013,Jakarta Pusat,Senen,6,48,515,38973.0
+2013,Jakarta Pusat,Cempaka Putih,3,30,375,29067.0
+2013,Jakarta Pusat,Menteng,5,38,425,26703.0
+2013,Jakarta Pusat,Tanah Abang,7,67,724,53574.0
+2013,Jakarta Pusat,Johar Baru,4,40,558,41006.0
+2013,Jakarta Utara,Penjaringan,5,70,837,94440.0
+2013,Jakarta Utara,Tanjung Priok,7,103,1269,121646.0
+2013,Jakarta Utara,Koja,6,82,906,97702.0
+2013,Jakarta Utara,Cilincing,7,85,997,119434.0
+2013,Jakarta Utara,Pademangan,3,34,432,50722.0
+2013,Jakarta Utara,Kelapa Gading,3,68,707,40049.0
+2013,Jakarta Barat,Cengkareng,6,84,1007,150422.0
+2013,Jakarta Barat,Grogol Petamburan,7,73,868,71845.0
+2013,Jakarta Barat,Taman Sari,8,60,688,42785.0
+2013,Jakarta Barat,Tambora,11,96,1082,83158.0
+2013,Jakarta Barat,Kebon Jeruk,7,70,716,94146.0
+2013,Jakarta Barat,Kalideres,5,74,745,114054.0
+2013,Jakarta Barat,Palmerah,6,61,712,64889.0
+2013,Jakarta Barat,Kembangan,6,63,617,74530.0
+2013,Jakarta Selatan,Tebet,7,80,939,72162.0
+2013,Jakarta Selatan,Setiabudi,8,51,512,35555.0
+2013,Jakarta Selatan,Mampang Prapatan,5,38,411,45606.0
+2013,Jakarta Selatan,Pasar Minggu,7,65,725,88594.0
+2013,Jakarta Selatan,Kebayoran Lama,6,77,861,90314.0
+2013,Jakarta Selatan,Cilandak,5,46,476,61426.0
+2013,Jakarta Selatan,Kebayoran Baru,10,73,660,46211.0
+2013,Jakarta Selatan,Pancoran,6,43,481,48042.0
+2013,Jakarta Selatan,Jagakarsa,6,54,544,85783.0
+2013,Jakarta Selatan,Pesanggrahan,5,51,530,66330.0
+2013,Jakarta Timur,Matraman,6,62,798,59055.0
+2013,Jakarta Timur,Pulo Gadung,7,93,1026,91959.0
+2013,Jakarta Timur,Jatinegara,8,90,1140,94473.0
+2013,Jakarta Timur,Kramat Jati,7,65,653,85633.0
+2013,Jakarta Timur,Pasar Rebo,5,53,524,58676.0
+2013,Jakarta Timur,Cakung,7,86,963,147484.0
+2013,Jakarta Timur,Duren Sawit,7,95,1102,116710.0
+2013,Jakarta Timur,Makasar,5,53,573,59060.0
+2013,Jakarta Timur,Ciracas,5,49,602,81436.0
+2013,Jakarta Timur,Cipayung,8,56,503,67925.0
+2014,Kepulauan Seribu,Kepulauan Seribu Selatan,3,13,75,4378.0
+2014,Kepulauan Seribu,Kepulauan Seribu Utara,3,11,52,2886.0
+2014,Jakarta Pusat,Gambir,6,44,484,32827.0
+2014,Jakarta Pusat,Sawah Besar,5,49,597,45436.0
+2014,Jakarta Pusat,Kemayoran,8,77,1031,79174.0
+2014,Jakarta Pusat,Senen,6,48,515,41618.0
+2014,Jakarta Pusat,Cempaka Putih,3,30,376,31168.0
+2014,Jakarta Pusat,Menteng,5,38,425,28731.0
+2014,Jakarta Pusat,Tanah Abang,7,67,724,57096.0
+2014,Jakarta Pusat,Johar Baru,4,40,558,43440.0
+2014,Jakarta Utara,Penjaringan,5,71,850,95248.0
+2014,Jakarta Utara,Tanjung Priok,7,103,1269,120012.0
+2014,Jakarta Utara,Koja,6,82,906,96497.0
+2014,Jakarta Utara,Cilincing,7,86,1012,118946.0
+2014,Jakarta Utara,Pademangan,3,34,434,51342.0
+2014,Jakarta Utara,Kelapa Gading,3,68,707,41128.0
+2014,Jakarta Barat,Cengkareng,6,85,1027,152517.0
+2014,Jakarta Barat,Grogol Petamburan,7,73,868,72138.0
+2014,Jakarta Barat,Taman Sari,8,60,688,41315.0
+2014,Jakarta Barat,Tambora,11,96,1082,82558.0
+2014,Jakarta Barat,Kebon Jeruk,7,70,716,95353.0
+2014,Jakarta Barat,Kalideres,5,74,748,116688.0
+2014,Jakarta Barat,Palmerah,6,61,712,65547.0
+2014,Jakarta Barat,Kembangan,6,63,617,75557.0
+2014,Jakarta Selatan,Tebet,7,80,939,72859.0
+2014,Jakarta Selatan,Setiabudi,8,52,514,35884.0
+2014,Jakarta Selatan,Mampang Prapatan,5,38,411,46464.0
+2014,Jakarta Selatan,Pasar Minggu,7,65,726,90623.0
+2014,Jakarta Selatan,Kebayoran Lama,6,77,861,92167.0
+2014,Jakarta Selatan,Cilandak,5,46,476,63039.0
+2014,Jakarta Selatan,Kebayoran Baru,10,73,660,47078.0
+2014,Jakarta Selatan,Pancoran,6,43,481,48541.0
+2014,Jakarta Selatan,Jagakarsa,6,54,546,88556.0
+2014,Jakarta Selatan,Pesanggrahan,5,51,530,67855.0
+2014,Jakarta Timur,Matraman,6,62,798,59365.0
+2014,Jakarta Timur,Pulo Gadung,7,94,1033,92557.0
+2014,Jakarta Timur,Jatinegara,8,90,1143,96802.0
+2014,Jakarta Timur,Kramat Jati,7,65,653,87434.0
+2014,Jakarta Timur,Pasar Rebo,5,53,525,60091.0
+2014,Jakarta Timur,Cakung,7,87,987,151703.0
+2014,Jakarta Timur,Duren Sawit,7,95,1103,120850.0
+2014,Jakarta Timur,Makasar,5,53,573,60148.0
+2014,Jakarta Timur,Ciracas,5,49,601,83419.0
+2014,Jakarta Timur,Cipayung,8,56,503,69599.0
+2015,Kepulauan Seribu,Kepulauan Seribu Selatan,3,13,75,4421.0
+2015,Kepulauan Seribu,Kepulauan Seribu Utara,3,11,52,2982.0
+2015,Jakarta Pusat,Gambir,6,44,484,32902.0
+2015,Jakarta Pusat,Sawah Besar,5,49,597,45598.0
+2015,Jakarta Pusat,Kemayoran,8,77,1031,81320.0
+2015,Jakarta Pusat,Senen,6,48,515,41703.0
+2015,Jakarta Pusat,Cempaka Putih,3,30,376,31139.0
+2015,Jakarta Pusat,Menteng,5,38,425,28985.0
+2015,Jakarta Pusat,Tanah Abang,7,67,724,57011.0
+2015,Jakarta Pusat,Johar Baru,4,40,558,44099.0
+2015,Jakarta Utara,Penjaringan,5,72,868,102777.0
+2015,Jakarta Utara,Tanjung Priok,7,103,1269,126450.0
+2015,Jakarta Utara,Koja,6,82,906,103107.0
+2015,Jakarta Utara,Cilincing,7,87,1024,127067.0
+2015,Jakarta Utara,Pademangan,3,34,436,54352.0
+2015,Jakarta Utara,Kelapa Gading,3,68,707,43133.0
+2015,Jakarta Barat,Cengkareng,6,86,1045,159108.0
+2015,Jakarta Barat,Grogol Petamburan,7,73,868,74673.0
+2015,Jakarta Barat,Taman Sari,8,60,688,43773.0
+2015,Jakarta Barat,Tambora,11,96,1084,86209.0
+2015,Jakarta Barat,Kebon Jeruk,7,70,716,100758.0
+2015,Jakarta Barat,Kalideres,5,74,749,123634.0
+2015,Jakarta Barat,Palmerah,6,61,712,68469.0
+2015,Jakarta Barat,Kembangan,6,63,618,81486.0
+2015,Jakarta Selatan,Tebet,7,80,940,75426.0
+2015,Jakarta Selatan,Setiabudi,8,52,516,36931.0
+2015,Jakarta Selatan,Mampang Prapatan,5,38,411,48176.0
+2015,Jakarta Selatan,Pasar Minggu,7,65,726,95015.0
+2015,Jakarta Selatan,Kebayoran Lama,6,77,861,95535.0
+2015,Jakarta Selatan,Cilandak,5,46,476,65302.0
+2015,Jakarta Selatan,Kebayoran Baru,10,73,660,48873.0
+2015,Jakarta Selatan,Pancoran,6,46,499,51409.0
+2015,Jakarta Selatan,Jagakarsa,6,54,546,94663.0
+2015,Jakarta Selatan,Pesanggrahan,5,51,530,71581.0
+2015,Jakarta Timur,Matraman,6,62,798,61419.0
+2015,Jakarta Timur,Pulo Gadung,7,94,1035,96171.0
+2015,Jakarta Timur,Jatinegara,8,91,1153,101159.0
+2015,Jakarta Timur,Kramat Jati,7,65,653,91808.0
+2015,Jakarta Timur,Pasar Rebo,5,53,526,63258.0
+2015,Jakarta Timur,Cakung,7,88,1004,162633.0
+2015,Jakarta Timur,Duren Sawit,7,95,1103,127462.0
+2015,Jakarta Timur,Makasar,5,53,573,63680.0
+2015,Jakarta Timur,Ciracas,5,49,604,87860.0
+2015,Jakarta Timur,Cipayung,8,56,504,75148.0
+2016,Kepulauan Seribu,Kepulauan Seribu Selatan,3,13,75,4522.0
+2016,Kepulauan Seribu,Kepulauan Seribu Utara,3,11,52,3116.0
+2016,Jakarta Pusat,Gambir,6,44,484,32386.0
+2016,Jakarta Pusat,Sawah Besar,5,49,597,44599.0
+2016,Jakarta Pusat,Kemayoran,8,77,1031,81716.0
+2016,Jakarta Pusat,Senen,6,48,515,43427.0
+2016,Jakarta Pusat,Cempaka Putih,3,30,376,32637.0
+2016,Jakarta Pusat,Menteng,5,38,425,29838.0
+2016,Jakarta Pusat,Tanah Abang,7,67,724,60074.0
+2016,Jakarta Pusat,Johar Baru,4,40,558,45526.0
+2016,Jakarta Utara,Penjaringan,5,72,862,97346.0
+2016,Jakarta Utara,Tanjung Priok,7,104,1277,128125.0
+2016,Jakarta Utara,Koja,6,82,906,104050.0
+2016,Jakarta Utara,Cilincing,7,88,1039,128443.0
+2016,Jakarta Utara,Pademangan,3,34,440,53710.0
+2016,Jakarta Utara,Kelapa Gading,3,68,715,44143.0
+2016,Jakarta Barat,Cengkareng,6,86,1047,164918.0
+2016,Jakarta Barat,Grogol Petamburan,7,73,868,76946.0
+2016,Jakarta Barat,Taman Sari,8,60,688,44692.0
+2016,Jakarta Barat,Tambora,11,96,1083,87939.0
+2016,Jakarta Barat,Kebon Jeruk,7,70,716,104902.0
+2016,Jakarta Barat,Kalideres,5,75,763,125865.0
+2016,Jakarta Barat,Palmerah,6,61,712,70598.0
+2016,Jakarta Barat,Kembangan,6,63,618,84735.0
+2016,Jakarta Selatan,Tebet,7,80,940,76354.0
+2016,Jakarta Selatan,Setiabudi,8,52,515,37829.0
+2016,Jakarta Selatan,Mampang Prapatan,5,38,411,49316.0
+2016,Jakarta Selatan,Pasar Minggu,7,65,726,97595.0
+2016,Jakarta Selatan,Kebayoran Lama,6,77,861,98092.0
+2016,Jakarta Selatan,Cilandak,5,46,476,66615.0
+2016,Jakarta Selatan,Kebayoran Baru,10,73,660,49655.0
+2016,Jakarta Selatan,Pancoran,6,46,499,52743.0
+2016,Jakarta Selatan,Jagakarsa,6,54,546,99025.0
+2016,Jakarta Selatan,Pesanggrahan,5,51,530,74296.0
+2016,Jakarta Timur,Matraman,6,62,798,61716.0
+2016,Jakarta Timur,Pulo Gadung,7,94,1033,97011.0
+2016,Jakarta Timur,Jatinegara,8,91,1146,102091.0
+2016,Jakarta Timur,Kramat Jati,7,65,653,93235.0
+2016,Jakarta Timur,Pasar Rebo,5,53,526,65161.0
+2016,Jakarta Timur,Cakung,7,89,1012,164002.0
+2016,Jakarta Timur,Duren Sawit,7,95,1103,128289.0
+2016,Jakarta Timur,Makasar,5,53,573,64856.0
+2016,Jakarta Timur,Ciracas,5,49,604,89996.0
+2016,Jakarta Timur,Cipayung,8,56,504,77742.0
+2017,Kepulauan Seribu,Kepulauan Seribu Selatan,3,13,75,4743.0
+2017,Kepulauan Seribu,Kepulauan Seribu Utara,3,11,52,3260.0
+2017,Jakarta Pusat,Gambir,6,44,484,34402.0
+2017,Jakarta Pusat,Sawah Besar,5,49,597,47714.0
+2017,Jakarta Pusat,Kemayoran,8,77,1031,85395.0
+2017,Jakarta Pusat,Senen,6,48,515,44236.0
+2017,Jakarta Pusat,Cempaka Putih,3,30,376,33098.0
+2017,Jakarta Pusat,Menteng,5,38,425,30418.0
+2017,Jakarta Pusat,Tanah Abang,7,67,724,61415.0
+2017,Jakarta Pusat,Johar Baru,4,40,558,46042.0
+2017,Jakarta Utara,Penjaringan,5,72,881,97502.0
+2017,Jakarta Utara,Tanjung Priok,7,104,1277,127686.0
+2017,Jakarta Utara,Koja,6,82,906,103390.0
+2017,Jakarta Utara,Cilincing,7,88,1039,128029.0
+2017,Jakarta Utara,Pademangan,3,34,444,53376.0
+2017,Jakarta Utara,Kelapa Gading,3,69,721,44105.0
+2017,Jakarta Barat,Cengkareng,6,86,1050,164695.0
+2017,Jakarta Barat,Grogol Petamburan,7,75,885,76388.0
+2017,Jakarta Barat,Taman Sari,8,60,688,44454.0
+2017,Jakarta Barat,Tambora,11,96,1083,87279.0
+2017,Jakarta Barat,Kebon Jeruk,7,70,716,104752.0
+2017,Jakarta Barat,Kalideres,5,75,763,125918.0
+2017,Jakarta Barat,Palmerah,6,61,712,70043.0
+2017,Jakarta Barat,Kembangan,6,63,618,84576.0
+2017,Jakarta Selatan,Tebet,7,80,940,75914.0
+2017,Jakarta Selatan,Setiabudi,8,52,515,37659.0
+2017,Jakarta Selatan,Mampang Prapatan,5,38,411,49108.0
+2017,Jakarta Selatan,Pasar Minggu,7,65,726,97357.0
+2017,Jakarta Selatan,Kebayoran Lama,6,77,861,97949.0
+2017,Jakarta Selatan,Cilandak,5,46,476,66509.0
+2017,Jakarta Selatan,Kebayoran Baru,10,73,660,49480.0
+2017,Jakarta Selatan,Pancoran,6,46,499,52649.0
+2017,Jakarta Selatan,Jagakarsa,6,54,546,98595.0
+2017,Jakarta Selatan,Pesanggrahan,5,51,530,74045.0
+2017,Jakarta Timur,Matraman,6,62,798,61282.0
+2017,Jakarta Timur,Pulo Gadung,7,94,1033,96451.0
+2017,Jakarta Timur,Jatinegara,8,91,1146,101377.0
+2017,Jakarta Timur,Kramat Jati,7,65,653,92641.0
+2017,Jakarta Timur,Pasar Rebo,5,53,526,64783.0
+2017,Jakarta Timur,Cakung,7,89,1015,163557.0
+2017,Jakarta Timur,Duren Sawit,7,96,1108,127886.0
+2017,Jakarta Timur,Makasar,5,53,573,64608.0
+2017,Jakarta Timur,Ciracas,5,49,605,89632.0
+2017,Jakarta Timur,Cipayung,8,56,508,77515.0
+2018,Kepulauan Seribu,Kepulauan Seribu Selatan,3,11,52,3339.0
+2018,Kepulauan Seribu,Kepulauan Seribu Utara,3,13,75,4842.0
+2018,Jakarta Pusat,Gambir,6,44,484,34081.0
+2018,Jakarta Pusat,Sawah Besar,5,49,597,46595.0
+2018,Jakarta Pusat,Kemayoran,8,77,1031,86430.0
+2018,Jakarta Pusat,Senen,6,48,515,43693.0
+2018,Jakarta Pusat,Cempaka Putih,3,30,376,33562.0
+2018,Jakarta Pusat,Menteng,5,38,425,30097.0
+2018,Jakarta Pusat,Tanah Abang,7,66,720,60986.0
+2018,Jakarta Pusat,Johar Baru,4,40,558,45823.0
+2018,Jakarta Utara,Penjaringan,5,73,894,103566.0
+2018,Jakarta Utara,Tanjung Priok,7,104,1277,134747.0
+2018,Jakarta Utara,Koja,6,82,906,109267.0
+2018,Jakarta Utara,Cilincing,7,88,1042,136729.0
+2018,Jakarta Utara,Pademangan,3,35,455,56375.0
+2018,Jakarta Utara,Kelapa Gading,3,70,727,46263.0
+2018,Jakarta Barat,Cengkareng,6,87,1068,175816.0
+2018,Jakarta Barat,Grogol Petamburan,7,75,884,79460.0
+2018,Jakarta Barat,Taman Sari,8,60,687,45144.0
+2018,Jakarta Barat,Tambora,11,96,1083,89723.0
+2018,Jakarta Barat,Kebon Jeruk,7,69,712,109831.0
+2018,Jakarta Barat,Kalideres,5,75,753,134935.0
+2018,Jakarta Barat,Palmerah,6,61,712,72722.0
+2018,Jakarta Barat,Kembangan,6,63,618,90720.0
+2018,Jakarta Selatan,Tebet,7,80,940,78905.0
+2018,Jakarta Selatan,Setiabudi,8,52,516,39445.0
+2018,Jakarta Selatan,Mampang Prapatan,5,38,411,51241.0
+2018,Jakarta Selatan,Pasar Minggu,7,65,726,103707.0
+2018,Jakarta Selatan,Kebayoran Lama,6,77,858,102957.0
+2018,Jakarta Selatan,Cilandak,5,46,476,70077.0
+2018,Jakarta Selatan,Kebayoran Baru,10,73,660,51509.0
+2018,Jakarta Selatan,Pancoran,6,46,501,55882.0
+2018,Jakarta Selatan,Jagakarsa,6,54,547,106848.0
+2018,Jakarta Selatan,Pesanggrahan,5,51,530,79073.0
+2018,Jakarta Timur,Matraman,6,62,798,63605.0
+2018,Jakarta Timur,Pulo Gadung,7,94,1033,101034.0
+2018,Jakarta Timur,Jatinegara,8,91,1146,106147.0
+2018,Jakarta Timur,Kramat Jati,7,65,653,98586.0
+2018,Jakarta Timur,Pasar Rebo,5,53,526,69088.0
+2018,Jakarta Timur,Cakung,7,89,1019,175587.0
+2018,Jakarta Timur,Duren Sawit,7,96,1108,135664.0
+2018,Jakarta Timur,Makasar,5,53,573,68388.0
+2018,Jakarta Timur,Ciracas,5,49,607,96091.0
+2018,Jakarta Timur,Cipayung,8,56,508,84286.0
+2019,Kepulauan Seribu,Kepulauan Seribu Selatan,3,11,52,3476.0
+2019,Kepulauan Seribu,Kepulauan Seribu Utara,3,13,75,4919.0
+2019,Jakarta Pusat,Gambir,6,43,466,34590.0
+2019,Jakarta Pusat,Sawah Besar,5,49,597,46638.0
+2019,Jakarta Pusat,Kemayoran,8,77,1028,87833.0
+2019,Jakarta Pusat,Senen,6,48,509,44418.0
+2019,Jakarta Pusat,Cempaka Putih,3,30,371,34037.0
+2019,Jakarta Pusat,Menteng,5,38,421,30467.0
+2019,Jakarta Pusat,Tanah Abang,7,65,706,61981.0
+2019,Jakarta Pusat,Johar Baru,4,40,557,46669.0
+2019,Jakarta Utara,Penjaringan,5,74,893,107153.0
+2019,Jakarta Utara,Tanjung Priok,7,104,1276,139354.0
+2019,Jakarta Utara,Koja,6,82,905,112953.0
+2019,Jakarta Utara,Cilincing,7,88,1035,141053.0
+2019,Jakarta Utara,Pademangan,3,35,455,58028.0
+2019,Jakarta Utara,Kelapa Gading,3,70,709,47608.0
+2019,Jakarta Barat,Cengkareng,6,87,1060,183019.0
+2019,Jakarta Barat,Grogol Petamburan,7,75,878,82010.0
+2019,Jakarta Barat,Taman Sari,8,60,686,45977.0
+2019,Jakarta Barat,Tambora,11,96,1083,92360.0
+2019,Jakarta Barat,Kebon Jeruk,7,69,712,114031.0
+2019,Jakarta Barat,Kalideres,5,75,752,141409.0
+2019,Jakarta Barat,Palmerah,6,61,712,74889.0
+2019,Jakarta Barat,Kembangan,6,63,617,94586.0
+2019,Jakarta Selatan,Tebet,7,79,931,81634.0
+2019,Jakarta Selatan,Setiabudi,8,51,503,40757.0
+2019,Jakarta Selatan,Mampang Prapatan,5,38,408,52840.0
+2019,Jakarta Selatan,Pasar Minggu,7,65,723,107882.0
+2019,Jakarta Selatan,Kebayoran Lama,6,77,857,107071.0
+2019,Jakarta Selatan,Cilandak,5,46,476,72716.0
+2019,Jakarta Selatan,Kebayoran Baru,10,73,648,53178.0
+2019,Jakarta Selatan,Pancoran,6,46,501,58025.0
+2019,Jakarta Selatan,Jagakarsa,6,54,546,111728.0
+2019,Jakarta Selatan,Pesanggrahan,5,51,526,82266.0
+2019,Jakarta Timur,Matraman,6,62,798,65459.0
+2019,Jakarta Timur,Pulo Gadung,7,95,1038,104283.0
+2019,Jakarta Timur,Jatinegara,8,91,1133,109066.0
+2019,Jakarta Timur,Kramat Jati,7,65,650,102283.0
+2019,Jakarta Timur,Pasar Rebo,5,53,525,72169.0
+2019,Jakarta Timur,Cakung,7,90,1017,182047.0
+2019,Jakarta Timur,Duren Sawit,7,96,1106,140512.0
+2019,Jakarta Timur,Makasar,5,53,571,70689.0
+2019,Jakarta Timur,Ciracas,5,49,609,99934.0
+2019,Jakarta Timur,Cipayung,8,56,508,87885.0

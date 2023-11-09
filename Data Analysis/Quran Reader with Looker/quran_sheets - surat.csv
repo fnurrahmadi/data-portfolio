@@ -1,0 +1,115 @@
+surat_no,surah_name_transliteration_id,surah_name_translation_id,surah_revelation_id,surat_jumlah_ayat,surat_jumlah_ruku,surah_sequence,surah_no_verse,surat_arabic
+1,Al-Fatihah,Pembukaan,Makkiyyah,7,1,5,7,الفاتحة
+2,Al-Baqarah,Sapi,Madaniyyah,286,40,87,286,البقرة
+3,Ali 'Imran,Keluarga Imran,Madaniyyah,200,20,89,200,آل عمران
+4,An-Nisa',Wanita,Madaniyyah,176,24,92,176,النساء
+5,Al-Ma'idah,Hidangan,Madaniyyah,120,16,112,120,المائدة
+6,Al-An'am,Binatang Ternak,Makkiyyah,165,20,55,165,الأنعام
+7,Al-A'raf,Tempat Tertinggi,Makkiyyah,206,24,39,206,الأعراف
+8,Al-Anfal,Rampasan Perang,Madaniyyah,75,10,88,75,الأنفال
+9,At-Taubah,Pengampunan,Madaniyyah,129,16,113,129,التوبة
+10,Yunus,Yunus,Makkiyyah,109,11,51,109,يونس
+11,Hud,Hud,Makkiyyah,123,10,52,123,هود
+12,Yusuf,Yusuf,Makkiyyah,111,12,53,111,يوسف
+13,Ar-Ra'd,Guruh,Madaniyyah,43,6,96,43,الرعد
+14,Ibrahim,Ibrahim,Makkiyyah,52,7,72,52,ابراهيم
+15,Al-Hijr,Hijr,Makkiyyah,99,6,54,99,الحجر
+16,An-Nahl,Lebah,Makkiyyah,128,16,70,128,النحل
+17,Al-Isra',Memperjalankan Malam Hari,Makkiyyah,111,12,50,111,الإسراء
+18,Al-Kahf,Goa,Makkiyyah,110,12,69,110,الكهف
+19,Maryam,Maryam,Makkiyyah,98,6,44,98,مريم
+20,Taha,Taha,Makkiyyah,135,8,45,135,طه
+21,Al-Anbiya',Para Nabi,Makkiyyah,112,7,73,112,الأنبياء
+22,Al-Hajj,Haji,Madaniyyah,78,10,103,78,الحج
+23,Al-Mu'minun,Orang-Orang Mukmin,Makkiyyah,118,6,74,118,المؤمنون
+24,An-Nur,Cahaya,Madaniyyah,64,9,102,64,النور
+25,Al-Furqan,Pembeda,Makkiyyah,77,6,42,77,الفرقان
+26,Asy-Syu'ara',Para Penyair,Makkiyyah,227,11,47,227,الشعراء
+27,An-Naml,Semut-semut,Makkiyyah,93,7,48,93,النمل
+28,Al-Qasas,Kisah-Kisah,Makkiyyah,88,9,49,88,القصص
+29,Al-'Ankabut,Laba-Laba,Makkiyyah,69,7,85,69,العنكبوت
+30,Ar-Rum,Romawi,Makkiyyah,60,6,84,60,الروم
+31,Luqman,Luqman,Makkiyyah,34,4,57,34,لقمان
+32,As-Sajdah,Sajdah,Makkiyyah,30,3,75,30,السجدة
+33,Al-Ahzab,Golongan Yang Bersekutu,Madaniyyah,73,9,90,73,الأحزاب
+34,Saba',Saba',Makkiyyah,54,6,58,54,سبإ
+35,Fatir,Maha Pencipta,Makkiyyah,45,5,43,45,فاطر
+36,Yasin,Yasin,Makkiyyah,83,5,41,83,يس
+37,As-Saffat,Barisan-Barisan,Makkiyyah,182,5,56,182,الصافات
+38,Sad,Sad,Makkiyyah,88,5,38,88,ص
+39,Az-Zumar,Rombongan,Makkiyyah,75,8,59,75,الزمر
+40,Gafir,Maha Pengampun,Makkiyyah,85,9,60,85,غافر
+41,Fussilat,Yang Dijelaskan,Makkiyyah,54,6,61,54,فصلت
+42,Asy-Syura,Musyawarah,Makkiyyah,53,5,62,53,الشورى
+43,Az-Zukhruf,Perhiasan,Makkiyyah,89,7,63,89,الزخرف
+44,Ad-Dukhan,Kabut,Makkiyyah,59,3,64,59,الدخان
+45,Al-Jasiyah,Berlutut,Makkiyyah,37,4,65,37,الجاثية
+46,Al-Ahqaf,Bukit Pasir,Makkiyyah,35,4,66,35,الأحقاف
+47,Muhammad,Muhammad,Madaniyyah,38,4,95,38,محمد
+48,Al-Fath,Kemenangan,Madaniyyah,29,2,111,29,الفتح
+49,Al-Hujurat,Kamar-Kamar,Madaniyyah,18,3,106,18,الحجرات
+50,Qaf,Qaf,Makkiyyah,45,3,34,45,ق
+51,Az-Zariyat,Angin yang Menerbangkan,Makkiyyah,60,2,67,60,الذاريات
+52,At-Tur,Bukit Tursina,Makkiyyah,49,3,76,49,الطور
+53,An-Najm,Bintang,Makkiyyah,62,3,23,62,النجم
+54,Al-Qamar,Bulan,Makkiyyah,55,3,37,55,القمر
+55,Ar-Rahman,Maha Pengasih,Madaniyyah,78,3,97,78,الرحمن
+56,Al-Waqi'ah,Hari Kiamat,Makkiyyah,96,4,46,96,الواقعة
+57,Al-Hadid,Besi,Madaniyyah,29,3,94,29,الحديد
+58,Al-Mujadalah,Gugatan,Madaniyyah,22,3,105,22,المجادلة
+59,Al-Hasyr,Pengusiran,Madaniyyah,24,2,101,24,الحشر
+60,Al-Mumtahanah,Wanita Yang Diuji,Madaniyyah,13,2,91,13,الممتحنة
+61,As-Saff,Barisan,Madaniyyah,14,2,109,14,الصف
+62,Al-Jumu'ah,Jumat,Madaniyyah,11,2,110,11,الجمعة
+63,Al-Munafiqun,Orang-Orang Munafik,Madaniyyah,11,2,104,11,المنافقون
+64,At-Tagabun,Pengungkapan Kesalahan,Madaniyyah,18,2,108,18,التغابن
+65,At-Talaq,Talak,Madaniyyah,12,2,99,12,الطلاق
+66,At-Tahrim,Pengharaman,Madaniyyah,12,2,107,12,التحريم
+67,Al-Mulk,Kerajaan,Makkiyyah,30,2,77,30,الملك
+68,Al-Qalam,Pena,Makkiyyah,52,2,2,52,القلم
+69,Al-Haqqah,Hari Kiamat,Makkiyyah,52,2,78,52,الحاقة
+70,Al-Ma'arij,Tempat Naik,Makkiyyah,44,2,79,44,المعارج
+71,Nuh,Nuh,Makkiyyah,28,2,71,28,نوح
+72,Al-Jinn,Jin,Makkiyyah,28,2,40,28,الجن
+73,Al-Muzzammil,Orang Yang Berselimut,Makkiyyah,20,2,3,20,المزمل
+74,Al-Muddassir,Orang Yang Berkemul,Makkiyyah,56,2,4,56,المدثر
+75,Al-Qiyamah,Hari Kiamat,Makkiyyah,40,2,31,40,القيامة
+76,Al-Insan,Manusia,Madaniyyah,31,2,98,31,الانسان
+77,Al-Mursalat,Malaikat Yang Diutus,Makkiyyah,50,2,33,50,المرسلات
+78,An-Naba',Berita Besar,Makkiyyah,40,2,80,40,النبإ
+79,An-Nazi'at,Malaikat Yang Mencabut,Makkiyyah,46,2,81,46,النازعات
+80,'Abasa,Bermuka Masam,Makkiyyah,42,1,24,42,عبس
+81,At-Takwir,Penggulungan,Makkiyyah,29,1,7,29,التكوير
+82,Al-Infitar,Terbelah,Makkiyyah,19,1,82,19,الإنفطار
+83,Al-Mutaffifin,Orang-Orang Curang,Makkiyyah,36,1,86,36,المطففين
+84,Al-Insyiqaq,Terbelah,Makkiyyah,25,1,83,25,الإنشقاق
+85,Al-Buruj,Gugusan Bintang,Makkiyyah,22,1,27,22,البروج
+86,At-Tariq,Yang Datang Di Malam Hari,Makkiyyah,17,1,36,17,الطارق
+87,Al-A'la,Maha Tinggi,Makkiyyah,19,1,8,19,الأعلى
+88,Al-Gasyiyah,Hari Kiamat,Makkiyyah,26,1,68,26,الغاشية
+89,Al-Fajr,Fajar,Makkiyyah,30,1,10,30,الفجر
+90,Al-Balad,Negeri,Makkiyyah,20,1,35,20,البلد
+91,Asy-Syams,Matahari,Makkiyyah,15,1,26,15,الشمس
+92,Al-Lail,Malam,Makkiyyah,21,1,9,21,الليل
+93,Ad-Duha,Duha,Makkiyyah,11,1,11,11,الضحى
+94,Asy-Syarh,Lapang,Makkiyyah,8,1,12,8,الشرح
+95,At-Tin,Buah Tin,Makkiyyah,8,1,28,8,التين
+96,Al-'Alaq,Segumpal Darah,Makkiyyah,19,1,1,19,العلق
+97,Al-Qadr,Kemuliaan,Makkiyyah,5,1,25,5,القدر
+98,Al-Bayyinah,Bukti Nyata,Madaniyyah,8,1,100,8,البينة
+99,Az-Zalzalah,Guncangan,Madaniyyah,8,1,93,8,الزلزلة
+100,Al-'Adiyat,Kuda Yang Berlari Kencang,Makkiyyah,11,1,14,11,العاديات
+101,Al-Qari'ah,Hari Kiamat,Makkiyyah,11,1,30,11,القارعة
+102,At-Takasur,Bermegah-Megahan,Makkiyyah,8,1,16,8,التكاثر
+103,Al-'Asr,Asar,Makkiyyah,3,1,13,3,العصر
+104,Al-Humazah,Pengumpat,Makkiyyah,9,1,32,9,الهمزة
+105,Al-Fil,Gajah,Makkiyyah,5,1,19,5,الفيل
+106,Quraisy,Quraisy,Makkiyyah,4,1,29,4,قريش
+107,Al-Ma'un,Barang Yang Berguna,Makkiyyah,7,1,17,7,الماعون
+108,Al-Kausar,Pemberian Yang Banyak,Makkiyyah,3,1,15,3,الكوثر
+109,Al-Kafirun,Orang-Orang kafir,Makkiyyah,6,1,18,6,الكافرون
+110,An-Nasr,Pertolongan,Madaniyyah,3,1,114,3,النصر
+111,Al-Lahab,Api Yang Bergejolak,Makkiyyah,5,1,6,5,المسد
+112,Al-Ikhlas,Ikhlas,Makkiyyah,4,1,22,4,الإخلاص
+113,Al-Falaq,Subuh,Makkiyyah,5,1,20,5,الفلق
+114,An-Nas,Manusia,Makkiyyah,6,1,21,6,الناس
