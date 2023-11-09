@@ -6,7 +6,7 @@ Data Analyst with a focus on generating value and providing actionable insights 
 
 ## Tools of Work
 - **Python** (pandas, matplotlib, seaborn, scipy, statsmodels, scikit-learn, BeautifulSoup, Selenium)
-- **SQL** (PostgreSQL, Snowflake)
+- **SQL** (PostgreSQL, Snowflake, DBeaver)
 - **Microsoft Excel**
 - **Google Sheets**
 - **Microsoft Power BI**
