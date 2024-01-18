@@ -12,8 +12,8 @@ users.merge(user_time_2, on='user_id').sort_values(by='first_name', ascending=Tr
 ```
 SELECT u.first_name
 FROM users u
-  INNER JOIN user_time ut
-    ON u.user_id = ut.user_id
+	INNER JOIN user_time ut
+		ON u.user_id = ut.user_id
 WHERE ut.media_time_minutes > (SELECT AVG(media_time_minutes) FROM user_time)
 ORDER BY u.first_name ASC;
 ```
@@ -111,6 +111,52 @@ round(sales['lost_revenue_millions'].sum())
 ```
 SELECT ROUND(SUM(lost_revenue_millions))
 FROM sales;
+```
+
+## [Million Dollar Store](https://www.analystbuilder.com/questions/million-dollar-store-ARdQa)
+### Python
+```
+import pandas as pd;
+stores_2 = stores.groupby(by='store_id', as_index=False).mean()[['store_id','revenue']]
+stores_2['revenue'] = round(stores_2['revenue'],2)
+stores_2[stores_2['revenue']>1000000].sort_values('store_id')
+```
+### PostgreSQL
+```
+SELECT store_id, ROUND(AVG(revenue),2)
+FROM stores
+GROUP BY store_id
+HAVING AVG(revenue) > 1000000
+ORDER BY store_id ASC;
+```
+
+## [Separation](https://www.analystbuilder.com/questions/separation-DbHMu)
+### Python
+```
+import pandas as pd;
+bad_data['first_name'] = bad_data['id'].apply(lambda x: x[5:])
+bad_data['id'] = bad_data['id'].apply(lambda x: x[:5])
+bad_data
+```
+### PostgreSQL
+```
+SELECT LEFT(id,5) as id, RIGHT(id,LENGTH(id)-5) as first_name
+FROM bad_data
+```
+
+## [Low Quality YouTube Videos](https://www.analystbuilder.com/questions/low-quality-youtube-video-idbeu)
+### Python
+```
+import pandas as pd;
+youtube_videos['like_pct'] = youtube_videos['thumbs_up'] / (youtube_videos['thumbs_up'] + youtube_videos['thumbs_down'])
+youtube_videos[youtube_videos['like_pct'] < 0.55][['video_id']].sort_values('video_id')
+```
+### PostgreSQL
+```
+SELECT video_id
+FROM youtube_videos
+WHERE thumbs_up*100/(thumbs_up + thumbs_down) < 55
+ORDER BY video_id ASC;
 ```
 
 ## []()
