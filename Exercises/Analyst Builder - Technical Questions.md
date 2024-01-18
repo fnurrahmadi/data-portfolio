@@ -29,8 +29,8 @@ patients[(patients['age']>50)&(patients['cholesterol']>=240)&(patients['weight']
 SELECT *
 FROM patients
 WHERE age > 50
-AND cholesterol >= 240
-AND weight >= 200
+	AND cholesterol >= 240
+	AND weight >= 200
 ORDER BY cholesterol DESC
 ```
 
@@ -64,11 +64,53 @@ WHERE LOWER(product_name) LIKE '%chocolate%';
 ## [Apply Discount](https://www.analystbuilder.com/questions/apply-discount-RdWhb)
 ### Python
 ```
-
+import pandas as pd;
+customers[(customers['age']>65)|(customers['total_purchase']>200)]['customer_id'].count()
 ```
 ### PostgreSQL
 ```
+SELECT COUNT(1)
+FROM customers
+WHERE age > 65
+OR total_purchase > 200
+```
 
+## [Electric Bike Replacement](https://www.analystbuilder.com/questions/electric-bike-replacement-ZaFie)
+### Python
+```
+import pandas as pd;
+bikes[bikes['miles']>10000]['bike_id'].count()
+```
+### PostgreSQL
+```
+SELECT COUNT(1)
+FROM bikes 
+WHERE miles > 10000
+```
+
+## [TMI (Too Much Information)](https://www.analystbuilder.com/questions/tmi-too-much-information-VyNhZ)
+### Python
+```
+import pandas as pd;
+customers[['first_name', 'last_name']] = customers['full_name'].str.split(' ', expand=True)
+customers[['customer_id','first_name']]
+```
+### PostgreSQL
+```
+SELECT customer_id, SPLIT_PART(full_name,' ',1)
+FROM customers;
+```
+
+## [Costco Rotisserie Loss](https://www.analystbuilder.com/questions/costco-rotisserie-loss-kkCDh)
+### Python
+```
+import pandas as pd;
+round(sales['lost_revenue_millions'].sum())
+```
+### PostgreSQL
+```
+SELECT ROUND(SUM(lost_revenue_millions))
+FROM sales;
 ```
 
 ## []()
