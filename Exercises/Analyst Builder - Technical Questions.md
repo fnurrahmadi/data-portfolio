@@ -159,6 +159,56 @@ WHERE thumbs_up*100/(thumbs_up + thumbs_down) < 55
 ORDER BY video_id ASC;
 ```
 
+## [Tesla Models](https://www.analystbuilder.com/questions/tesla-models-soJdJ)
+### Python
+```
+import pandas as pd;
+tesla_models['profit'] = tesla_models['cars_sold'] * (tesla_models['car_price'] - tesla_models['production_cost'])
+tesla_models[tesla_models['profit']==max(tesla_models['profit'])]
+```
+### PostgreSQL
+```
+SELECT *, cars_sold * (car_price - production_cost) as profit
+FROM tesla_models
+ORDER BY profit DESC
+LIMIT 1
+```
+
+## [Company Wide Increase](https://www.analystbuilder.com/questions/company-wide-increase-TytwW)
+### Python
+```
+import pandas as pd;
+employees['new_salary'] = employees.apply(lambda x: x['salary']*1.10 if x['pay_level']==1 else(x['salary']*1.15 if x['pay_level']==2 else x['salary']*3), axis=1)
+employees[['employee_id','pay_level','salary','new_salary']]
+```
+### PostgreSQL
+```
+SELECT *,
+  CASE
+    WHEN pay_level = 1 THEN salary*1.10
+    WHEN pay_level = 2 THEN salary*1.15
+    ELSE salary*3
+  END AS new_salary
+FROM employees;
+```
+
+## [Direct Reports](https://www.analystbuilder.com/questions/direct-reports-qQoVA)
+### Python
+```
+import pandas as pd;
+dr = direct_reports.groupby(by='managers_id', as_index=False).count()[['managers_id','employee_id']].rename(columns={'employee_id':'direct_reports'})
+dr = dr.merge(direct_reports[direct_reports['position'].str.lower().str.contains('manager')][['employee_id','position']], left_on='managers_id', right_on='employee_id')
+dr[['managers_id','position','direct_reports']]
+```
+### PostgreSQL
+```
+SELECT a.managers_id as manager_id, b.position as manager_position, COUNT(1) as direct_reports
+FROM direct_reports a
+  JOIN (SELECT employee_id, position FROM direct_reports WHERE LOWER(position) LIKE '%manager%') b
+    ON a.managers_id = b.employee_id
+GROUP BY 1,2;
+```
+
 ## []()
 ### Python
 ```
