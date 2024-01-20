@@ -1,4 +1,4 @@
-# Analyst Builder - Technical Questions
+# [Analyst Builder - Technical Questions](https://www.analystbuilder.com/questions)
 
 ## [Media Addicts](https://www.analystbuilder.com/questions/media-addicts-deISZ)
 ### Python
@@ -207,6 +207,26 @@ FROM direct_reports a
   JOIN (SELECT employee_id, position FROM direct_reports WHERE LOWER(position) LIKE '%manager%') b
     ON a.managers_id = b.employee_id
 GROUP BY 1,2;
+```
+
+## []()
+### Python
+```
+
+```
+### PostgreSQL
+```
+
+```
+
+## []()
+### Python
+```
+
+```
+### PostgreSQL
+```
+
 ```
 
 ## []()
