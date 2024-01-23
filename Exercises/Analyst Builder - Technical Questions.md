@@ -209,14 +209,44 @@ FROM direct_reports a
 GROUP BY 1,2;
 ```
 
-## []()
+## [Cake vs Pie](https://www.analystbuilder.com/questions/cake-vs-pie-rSDbF)
 ### Python
 ```
-
+import pandas as pd;
+df = desserts.pivot(index='date_sold', columns='product', values='amount_sold').reset_index().sort_values('date_sold')
+df['Cake'] = df['Cake'].fillna(0)
+df['Pie'] = df['Pie'].fillna(0)
+df['difference'] = abs(df['Cake'] - df['Pie'])
+df['sold_more'] = df.apply(lambda x: 'Cake' if x['Cake'] > x['Pie'] else 'Pie', axis=1)
+df[['date_sold','difference','sold_more']]
 ```
 ### PostgreSQL
 ```
-
+WITH cake AS (
+  SELECT
+  date_sold,
+  COALESCE(amount_sold,0) AS sum_cake
+  FROM desserts
+  WHERE product = 'Cake'
+),
+pies AS (
+  SELECT
+  date_sold,
+  COALESCE(amount_sold,0) AS sum_pies
+  FROM desserts
+  WHERE product = 'Pie'
+)
+SELECT
+c.date_sold,
+ABS(c.sum_cake - p.sum_pies) AS difference,
+CASE
+  WHEN c.sum_cake > p.sum_pies THEN 'Cake'
+  ELSE 'Pie'
+  END AS sold_more
+FROM cake c
+  FULL JOIN pies p
+  ON c.date_sold = p.date_sold
+ORDER BY c.date_sold ASC;
 ```
 
 ## []()
