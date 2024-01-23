@@ -249,14 +249,33 @@ FROM cake c
 ORDER BY c.date_sold ASC;
 ```
 
-## []()
+## [Bike Price](https://www.analystbuilder.com/questions/bike-price-zKcOR)
 ### Python
 ```
-
+import pandas as pd;
+round(inventory[~(inventory['bike_price'].isna())&(inventory['bike_sold']=='Y')]['bike_price'].mean(),2)
 ```
 ### PostgreSQL
 ```
+SELECT ROUND(CAST(AVG(bike_price) AS numeric),2)
+FROM inventory
+WHERE bike_price IS NOT NULL
+  AND bike_sold = 'Y';
+```
 
+## [Senior Citizen Discount](https://www.analystbuilder.com/questions/senior-citizen-discount-fRxVJ)
+### Python
+```
+import pandas as pd
+from datetime import datetime
+customers[(datetime.strptime('2023-01-01', '%Y-%m-%d') - pd.to_datetime(customers['birth_date'])).dt.days/365 >= 55][['customer_id']].sort_values('customer_id')
+```
+### PostgreSQL
+```
+SELECT customer_id
+FROM customers
+WHERE ('2023-01-01' - birth_date)/365 >= 55
+ORDER BY customer_id;
 ```
 
 ## []()
