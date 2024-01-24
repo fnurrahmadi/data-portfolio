@@ -278,6 +278,28 @@ WHERE ('2023-01-01' - birth_date)/365 >= 55
 ORDER BY customer_id;
 ```
 
+## [Temperature Fluctuations](https://www.analystbuilder.com/questions/temperature-fluctuations-ftFQu)
+### Python
+```
+import pandas as pd;
+temperatures['p_temp'] = temperatures['temperature'].shift(1)
+temperatures[temperatures['temperature'] > temperatures['p_temp']][['date']]
+```
+### PostgreSQL
+```
+WITH previous_temp AS (
+  SELECT date,
+  LAG(temperature, 1) OVER(ORDER BY date) AS p_temp
+  FROM temperatures
+)
+SELECT t.date
+FROM temperatures t
+  INNER JOIN previous_temp p
+  ON t.date = p.date
+WHERE temperature > p_temp
+LIMIT 10;
+```
+
 ## []()
 ### Python
 ```
@@ -287,4 +309,3 @@ ORDER BY customer_id;
 ```
 
 ```
-

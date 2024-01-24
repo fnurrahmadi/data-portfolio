@@ -98,6 +98,45 @@ FROM Employee e
 WHERE COALESCE(b.bonus,0) < 1000;
 ```
 
+## [Students and Examinations](https://leetcode.com/problems/students-and-examinations/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT s1.student_id, s1.student_name, s2.subject_name,
+    (SELECT COUNT(e.student_id) FROM Examinations e WHERE e.student_id = s1.student_id AND e.subject_name = s2.subject_name) AS attended_exams
+FROM Students s1
+    CROSS JOIN Subjects s2
+GROUP BY 1,2,3
+ORDER BY 1,3;
+```
+
+## [Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+WITH table_1 AS (
+    SELECT managerId, COUNT(1) AS direct
+    FROM Employee
+    GROUP BY 1
+    HAVING COUNT(1) >= 5
+)
+SELECT e.name
+FROM Employee e
+    INNER JOIN table_1 t
+    ON t.managerId = e.id;
+```
+
+## [Confirmation Rate](https://leetcode.com/problems/confirmation-rate/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+WITH rate AS (
+    SELECT user_id,
+    SUM(CASE WHEN action = 'confirmed' THEN 1 ELSE 0 END) AS confirmed,
+    COUNT(1) AS total
+    FROM Confirmations
+    GROUP BY 1
+)
+SELECT s.user_id, ROUND(COALESCE(r.confirmed/r.total::numeric,0),2) AS confirmation_rate
+FROM Signups s
+    LEFT JOIN rate r
+    ON s.user_id = r.user_id;
+```
+
 ## []()
 ```
 
