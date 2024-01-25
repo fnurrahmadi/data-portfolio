@@ -300,6 +300,19 @@ WHERE temperature > p_temp
 LIMIT 10;
 ```
 
+## [Kroger's Members](https://www.analystbuilder.com/questions/krogers-members-FjyKN)
+### Python
+```
+import pandas as pd;
+round(100*len(customers[customers['has_member_card']=='Y']) / len(customers),2)
+```
+### PostgreSQL
+```
+SELECT ROUND(100*COUNT(1) / CAST((SELECT COUNT(1) FROM customers) AS numeric),2)
+FROM customers
+WHERE has_member_card = 'Y';
+```
+
 ## []()
 ### Python
 ```

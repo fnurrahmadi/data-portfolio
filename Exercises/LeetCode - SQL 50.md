@@ -166,7 +166,27 @@ FROM Project p
 GROUP BY 1;
 ```
 
+## [Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT r.contest_id,
+ROUND(100*COUNT(1) / (SELECT COUNT(1) FROM Users)::numeric,2) AS percentage
+FROM Register r
+GROUP BY 1
+ORDER BY 2 DESC, 1 ASC;
+```
+
+## [Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT q.query_name,
+    ROUND(AVG(rating/position::numeric),2) AS quality,
+    ROUND(100*SUM(CASE WHEN rating < 3 THEN 1 ELSE 0 END) / COUNT(1)::numeric,2) AS poor_query_percentage
+FROM Queries q
+WHERE q.query_name IS NOT NULL
+GROUP BY 1;
+```
+
 ## []()
 ```
 
 ```
+
