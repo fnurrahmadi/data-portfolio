@@ -361,7 +361,7 @@ FROM bread_table, meat_table
 ORDER BY 1,2;
 ```
 
-## [Kelly's 3rd Purchase]()
+## [Kelly's 3rd Purchase](https://www.analystbuilder.com/questions/kellys-3rd-purchase-kFaIE)
 ### Python
 ```
 import pandas as pd;
@@ -380,6 +380,38 @@ SELECT customer_id, transaction_id, amount,
   amount - (amount * 0.33) AS discounted_amount
 FROM x 
 WHERE purchase_count = 3
+ORDER BY 1;
+```
+
+## [Tech Layoffs](https://www.analystbuilder.com/questions/tech-layoffs-CpLXE)
+### Python
+```
+import pandas as pd;
+tech_layoffs['percentage_laid_off'] = round(100*tech_layoffs['employees_fired']/tech_layoffs['company_size'],2)
+tech_layoffs[['company','percentage_laid_off']].sort_values('company')
+```
+### PostgreSQL
+```
+SELECT company,
+  ROUND(100*employees_fired/company_size::numeric,2) AS percentage_laid_off
+FROM tech_layoffs
+ORDER BY company;
+```
+
+## [Perfect Data Analyst](https://www.analystbuilder.com/questions/perfect-data-analyst-GMFmx)
+### Python
+```
+import pandas as pd;
+candidates[(candidates['problem_solving']=='X') & (candidates['sql_experience']=='X') & ((candidates['python']=='X') | (candidates['r_programming']=='X')) & (candidates['domain_knowledge']=='X')].sort_values('candidate_id')[['candidate_id']]
+```
+### PostgreSQL
+```
+SELECT candidate_id
+FROM candidates
+WHERE problem_solving = 'X'
+  AND sql_experience = 'X'
+  AND (python = 'X' OR r_programming = 'X')
+  AND domain_knowledge = 'X'
 ORDER BY 1;
 ```
 
