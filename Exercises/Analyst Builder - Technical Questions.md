@@ -313,6 +313,76 @@ FROM customers
 WHERE has_member_card = 'Y';
 ```
 
+## [Food Divides Us](https://www.analystbuilder.com/questions/food-divides-us-GvhLL)
+### Python
+```
+import pandas as pd;
+df = food_regions.groupby('region', as_index=False).agg({'fast_food_millions':'sum'})
+df.sort_values('fast_food_millions', ascending=False).head(1)[['region']]
+```
+### PostgreSQL
+```
+WITH x AS (
+  SELECT region, SUM(fast_food_millions) AS total
+  FROM food_regions
+  GROUP BY 1
+  ORDER BY 2 DESC
+  LIMIT 1
+)
+SELECT region
+FROM x;
+```
+
+## [Car Failure](https://www.analystbuilder.com/questions/car-failure-TUsTW)
+### Python
+```
+import pandas as pd;
+inspections[(inspections['minor_issues']<=3) & (inspections['critical_issues']<1)][['owner_name','vehicle']].sort_values('owner_name')
+```
+### PostgreSQL
+```
+SELECT owner_name, vehicle
+FROM inspections
+WHERE critical_issues < 1
+  AND minor_issues <= 3
+ORDER BY 1 ASC;
+```
+
+## [Sandwich Generation](https://www.analystbuilder.com/questions/sandwich-generation-excIi)
+### Python
+```
+import pandas as pd;
+bread_table[['bread_name']].merge(meat_table[['meat_name']], how='cross').sort_values(['bread_name','meat_name'])
+```
+### PostgreSQL
+```
+SELECT bread_name, meat_name
+FROM bread_table, meat_table
+ORDER BY 1,2;
+```
+
+## [Kelly's 3rd Purchase]()
+### Python
+```
+import pandas as pd;
+purchases['rank'] = purchases.groupby('customer_id')['transaction_id'].rank(method='dense')
+purchases['discounted_amount'] = purchases[purchases['rank']==3]['amount'] - purchases[purchases['rank']==3]['amount']*0.33
+purchases[purchases['rank']==3][['customer_id','transaction_id','amount','discounted_amount']].sort_values('customer_id')
+```
+### PostgreSQL
+```
+WITH x AS(
+  SELECT customer_id, transaction_id, amount,
+    DENSE_RANK() OVER(PARTITION BY customer_id ORDER BY transaction_id ASC) AS purchase_count
+  FROM purchases
+)
+SELECT customer_id, transaction_id, amount,
+  amount - (amount * 0.33) AS discounted_amount
+FROM x 
+WHERE purchase_count = 3
+ORDER BY 1;
+```
+
 ## []()
 ### Python
 ```
