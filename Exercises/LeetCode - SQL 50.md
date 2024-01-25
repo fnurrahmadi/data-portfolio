@@ -137,6 +137,35 @@ FROM Signups s
     ON s.user_id = r.user_id;
 ```
 
+## [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT *
+FROM Cinema
+WHERE id % 2 <> 0
+    AND description NOT LIKE 'boring'
+ORDER BY rating DESC;
+```
+
+## [Average Selling Price](https://leetcode.com/problems/average-selling-price/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT p.product_id,
+    COALESCE(ROUND(SUM(u.units*p.price) / SUM(u.units)::numeric,2),0) AS average_price
+FROM Prices p
+    LEFT JOIN UnitsSold u
+    ON u.product_id = p.product_id
+        AND u.purchase_date BETWEEN p.start_date AND p.end_date 
+GROUP BY 1;
+```
+
+## [Project Employees I](https://leetcode.com/problems/project-employees-i/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT p.project_id, ROUND(AVG(e.experience_years),2) AS average_years
+FROM Project p
+    INNER JOIN Employee e
+    ON p.employee_id = e.employee_id
+GROUP BY 1;
+```
+
 ## []()
 ```
 
