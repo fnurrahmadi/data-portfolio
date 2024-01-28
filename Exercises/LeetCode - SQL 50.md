@@ -185,6 +185,31 @@ WHERE q.query_name IS NOT NULL
 GROUP BY 1;
 ```
 
+## [Monthly Transactions I](https://leetcode.com/problems/monthly-transactions-i/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT TO_CHAR(trans_date, 'YYYY-MM') AS month, country,
+    COUNT(1) AS trans_count,
+    SUM(CASE WHEN state = 'approved' THEN 1 ELSE 0 END) AS approved_count,
+    SUM(amount) AS trans_total_amount,
+    SUM(CASE WHEN state = 'approved' THEN amount ELSE 0 END) AS approved_total_amount
+FROM Transactions
+GROUP BY 1,2;
+```
+
+## [Immediate Food Delivery II](https://leetcode.com/problems/immediate-food-delivery-ii/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT ROUND(100 * COUNT(CASE WHEN d.order_date = d.customer_pref_delivery_date THEN 1 ELSE NULL END) / COUNT(1)::numeric, 2) AS immediate_percentage
+FROM Delivery d
+WHERE d.order_date = (SELECT MIN(z.order_date) FROM Delivery z WHERE z.customer_id = d.customer_id);
+```
+
+## [Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT ROUND(COUNT(1) / (SELECT COUNT(DISTINCT c.player_id) FROM Activity c)::numeric,2) AS fraction
+FROM Activity a
+WHERE a.event_date = (SELECT MIN(b.event_date) FROM Activity b WHERE b.player_id = a.player_id) + interval '1 day'
+```
+
 ## []()
 ```
 

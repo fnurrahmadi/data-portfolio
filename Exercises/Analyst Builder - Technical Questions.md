@@ -415,12 +415,17 @@ WHERE problem_solving = 'X'
 ORDER BY 1;
 ```
 
-## []()
+## [LinkedIn Famous](https://www.analystbuilder.com/questions/linkedin-famous-oQMdb)
 ### Python
 ```
-
+import pandas as pd;
+linkedin_posts['popularity'] = 100 * linkedin_posts['actions'] / linkedin_posts['impressions']
+linkedin_posts[linkedin_posts['popularity']>=1].sort_values('popularity', ascending=False)[['post_id','popularity']]
 ```
 ### PostgreSQL
 ```
-
+SELECT post_id, 100*actions/impressions::numeric AS popularity
+FROM linkedin_posts
+WHERE 100*actions/impressions::numeric >= 1
+ORDER BY 2 DESC;
 ```
