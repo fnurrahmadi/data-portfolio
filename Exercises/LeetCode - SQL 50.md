@@ -210,8 +210,88 @@ FROM Activity a
 WHERE a.event_date = (SELECT MIN(b.event_date) FROM Activity b WHERE b.player_id = a.player_id) + interval '1 day'
 ```
 
+## [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT teacher_id, COUNT(DISTINCT subject_id) AS cnt
+FROM Teacher
+GROUP BY 1;
+```
+
+## [User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT activity_date AS day,
+    COUNT(DISTINCT user_id) AS active_users
+FROM Activity
+WHERE activity_date BETWEEN DATE '2019-07-27' - interval '29 days' AND '2019-07-27' 
+GROUP BY 1;
+```
+
+## [Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT s.product_id, s.year AS first_year, s.quantity, s.price
+FROM Sales s
+JOIN (SELECT product_id, MIN(year) AS year FROM Sales GROUP BY 1) a
+    ON s.product_id = a.product_id
+    AND s.year = a.year;
+```
+
+## [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT class
+FROM Courses
+GROUP BY 1
+HAVING COUNT(1) >= 5;
+```
+
+## [Find Followers Count](https://leetcode.com/problems/find-followers-count/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT user_id, COUNT(1) AS followers_count
+FROM Followers
+GROUP BY 1
+ORDER BY 1;
+```
+
+## [Biggest Single Number](https://leetcode.com/problems/biggest-single-number/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT MAX(num) AS num
+FROM (SELECT num
+    FROM MyNumbers
+    GROUP BY 1
+    HAVING COUNT(1) = 1
+    ORDER BY 1 DESC);
+```
+
+## [Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT c.customer_id
+FROM Customer c
+GROUP BY 1
+HAVING COUNT(DISTINCT c.product_key) = (SELECT COUNT(DISTINCT p.product_key) FROM Product p)
+```
+
+## [The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT e.employee_id, e.name, a.reports_count, a.average_age
+FROM Employees e
+JOIN (SELECT reports_to, COUNT(1) AS reports_count, ROUND(AVG(age)) AS average_age
+    FROM Employees
+    GROUP BY 1
+    HAVING COUNT(1) > 0) a
+    ON e.employee_id = a.reports_to
+ORDER BY 1;
+```
+
+## [Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT e.employee_id, e.department_id
+FROM Employee e
+JOIN (SELECT employee_id, COUNT(1) AS cnt FROM Employee GROUP BY 1) a
+    ON e.employee_id = a.employee_id
+WHERE e.primary_flag = 'Y'
+    OR a.cnt = 1;
+```
+
 ## []()
 ```
 
 ```
-
