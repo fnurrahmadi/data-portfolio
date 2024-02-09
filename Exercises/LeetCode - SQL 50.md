@@ -291,6 +291,100 @@ WHERE e.primary_flag = 'Y'
     OR a.cnt = 1;
 ```
 
+## [Triangle Judgement](https://leetcode.com/problems/triangle-judgement/submissions/1170839974/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT *,
+    CASE WHEN x+y>z AND x+z>y AND y+z>x THEN 'Yes' ELSE 'No' END AS triangle
+FROM Triangle;
+```
+
+## [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT DISTINCT a.num AS ConsecutiveNums
+FROM (SELECT *,
+    LEAD(num,1) OVER() num1,
+    LEAD(num,2) OVER() num2
+    FROM logs) a
+WHERE num = num1
+    AND num = num2;
+```
+
+## [Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+WITH p1 AS (
+    SELECT product_id, MAX(change_date) AS date
+    FROM Products
+    WHERE change_date <= '2019-08-16'
+    GROUP BY 1
+),
+p2 AS (
+    SELECT p.product_id, p.new_price
+    FROM Products p
+    INNER JOIN p1
+        ON p.product_id = p1.product_id
+        AND p.change_date = p1.date
+)
+SELECT p3.product_id, COALESCE(MAX(p2.new_price),10) AS price
+FROM Products p3
+LEFT JOIN p2
+    ON p3.product_id = p2.product_id
+GROUP BY 1;
+```
+
+## [Last Person to Fit in the Bus](https://leetcode.com/problems/last-person-to-fit-in-the-bus/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+WITH a AS (
+    SELECT person_name,
+        SUM(weight) OVER (ORDER BY turn ASC) AS c_weight
+    FROM Queue
+    ORDER BY turn DESC
+)
+SELECT person_name
+FROM a
+WHERE c_weight <= 1000
+LIMIT 1;
+```
+
+## [Count Salary Categories](https://leetcode.com/problems/count-salary-categories/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+WITH a AS (
+    SELECT CASE
+        WHEN income < 20000 THEN 'Low Salary'
+        WHEN income <= 50000 THEN 'Average Salary'
+        ELSE 'High Salary' END AS category,
+        COALESCE(COUNT(1),0) AS accounts_count
+    FROM Accounts
+    GROUP BY 1
+),
+b as (
+    SELECT 'Low Salary' AS category
+    UNION ALL
+    SELECT 'Average Salary'
+    UNION ALL
+    SELECT 'High Salary'
+)
+SELECT b.category, COALESCE(a.accounts_count,0) AS accounts_count
+FROM b
+LEFT JOIN a
+    ON a.category = b.category;
+```
+
+OR
+
+```
+SELECT 'Low Salary' AS category, COALESCE(COUNT(1),0) AS accounts_count
+FROM Accounts
+WHERE income < 20000
+UNION ALL
+SELECT 'Average Salary' AS category, COALESCE(COUNT(1),0) AS accounts_count
+FROM Accounts
+WHERE income BETWEEN 20000 AND 50000
+UNION ALL
+SELECT 'High Salary' AS category, COALESCE(COUNT(1),0) AS accounts_count
+FROM Accounts
+WHERE income > 50000
+```
+
 ## []()
 ```
 
