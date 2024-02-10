@@ -438,12 +438,80 @@ FROM (SELECT m.title
     LIMIT 1);
 ```
 
-## []()
+## [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/description/?envType=study-plan-v2&envId=top-sql-50)
 ```
 
 ```
 
-## []()
+## [Friend Requests II: Who Has the Most Friends](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/?envType=study-plan-v2&envId=top-sql-50)
 ```
 
 ```
+
+## [Investments in 2016](https://leetcode.com/problems/investments-in-2016/?envType=study-plan-v2&envId=top-sql-50)
+```
+
+```
+
+## [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/?envType=study-plan-v2&envId=top-sql-50)
+```
+
+```
+
+## [Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT user_id, CONCAT(UPPER(LEFT(name,1)),LOWER(RIGHT(name,LENGTH(name)-1))) AS name
+FROM Users
+ORDER BY 1;
+```
+
+## [Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT *
+FROM Patients
+WHERE conditions LIKE 'DIAB1%'
+    OR conditions LIKE '% DIAB1%';
+```
+
+## [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/?envType=study-plan-v2&envId=top-sql-50)
+```
+DELETE FROM Person a USING (
+    SELECT MIN(id) AS id, email
+    FROM Person
+    GROUP BY 2
+    HAVING COUNT(1) > 1
+) b
+WHERE a.email = b.email
+	AND a.id <> b.id;
+```
+
+OR
+
+```
+DELETE FROM Person p1 USING Person p2
+WHERE p1.Email = p2.Email
+    AND p1.id > p2.id
+```
+
+## [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/?envType=study-plan-v2&envId=top-sql-50)
+```
+
+```
+
+## [Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/?envType=study-plan-v2&envId=top-sql-50)
+```
+
+```
+
+## [List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+
+```
+
+## [Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/?envType=study-plan-v2&envId=top-sql-50)
+```
+
+```
+
+That's the end of LeetCode - SQL 50 :)
+Check out my other exercises!
