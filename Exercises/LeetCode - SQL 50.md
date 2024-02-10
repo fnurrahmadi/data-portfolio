@@ -385,6 +385,64 @@ FROM Accounts
 WHERE income > 50000
 ```
 
+## [Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT employee_id
+FROM Employees
+WHERE manager_id NOT IN (SELECT employee_id FROM Employees)
+    AND salary < 30000
+ORDER BY 1;
+```
+
+## [Exchange Seats](https://leetcode.com/problems/exchange-seats/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT a.id,
+    CASE WHEN (SELECT COUNT(1) FROM Seat) % 2 <> 0 AND a.id + 1 NOT IN (SELECT b.id FROM Seat b) THEN student
+    WHEN a.id % 2 = 0 THEN (SELECT b.student FROM Seat b WHERE a.id = b.id + 1)
+    ELSE (SELECT b.student FROM Seat b WHERE a.id = b.id - 1) END AS student
+FROM Seat a
+ORDER BY 1;
+```
+
+OR
+
+```
+SELECT
+    CASE WHEN id = (SELECT MAX(id) FROM Seat) AND id % 2 <> 0 THEN id
+    WHEN id % 2 = 0 THEN id - 1
+    ELSE id + 1 END AS id,
+    student    
+FROM Seat a
+ORDER BY 1;
+```
+
+## [Movie Rating](https://leetcode.com/problems/movie-rating/description/?envType=study-plan-v2&envId=top-sql-50)
+```
+SELECT name AS results
+FROM (SELECT u.name 
+    FROM Users u
+    JOIN MovieRating r
+        ON u.user_id = r.user_id
+    GROUP BY 1
+    ORDER BY COUNT(1) DESC, 1 ASC
+    LIMIT 1)
+UNION ALL
+SELECT title AS results
+FROM (SELECT m.title
+    FROM Movies m
+    JOIN MovieRating r
+        ON m.movie_id = r.movie_id
+    WHERE EXTRACT(YEAR FROM r.created_at) = 2020 AND EXTRACT(MONTH FROM r.created_at) = 2
+    GROUP BY 1
+    ORDER BY AVG(r.rating) DESC, 1 ASC
+    LIMIT 1);
+```
+
+## []()
+```
+
+```
+
 ## []()
 ```
 
