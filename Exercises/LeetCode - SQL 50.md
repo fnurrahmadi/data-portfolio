@@ -500,17 +500,30 @@ WHERE p1.Email = p2.Email
 
 ## [Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/?envType=study-plan-v2&envId=top-sql-50)
 ```
-
+SELECT sell_date, COUNT(DISTINCT product) AS num_sold,
+    string_agg(DISTINCT product, ',' ORDER BY product ASC) AS products
+FROM Activities
+GROUP BY 1
+ORDER BY 1;
 ```
 
 ## [List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/description/?envType=study-plan-v2&envId=top-sql-50)
 ```
-
+SELECT p.product_name, SUM(o.unit) AS unit
+FROM Products p
+JOIN Orders o
+    ON p.product_id = o.product_id
+WHERE EXTRACT(YEAR FROM o.order_date) = 2020
+    AND EXTRACT(MONTH FROM o.order_date) = 2
+GROUP BY 1
+HAVING SUM(o.unit) >= 100;
 ```
 
 ## [Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/?envType=study-plan-v2&envId=top-sql-50)
 ```
-
+SELECT *
+FROM Users
+WHERE mail ~ '^[A-Za-z][A-Za-z_0-9\-\.\_]*@leetcode\.com$';
 ```
 
 That's the end of LeetCode - SQL 50 :)
