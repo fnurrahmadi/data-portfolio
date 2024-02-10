@@ -33,6 +33,7 @@ The final members table captures the join_date when a customer_id joined the bet
 ## Case Study Questions
 
 ### 1. What is the total amount each customer spent at the restaurant?
+#### Code:
 ```
 SELECT s.customer_id, SUM(me.price) total_amount
 FROM sales s
@@ -42,8 +43,18 @@ GROUP BY 1
 ORDER BY 1;
 ```
 
+#### Result:
+|customer_id|total_amount|
+|---|---|
+|A|76|
+|B|74|
+|C|36|
+
+### Explanation:
+Joining the menu table, we are able to acquire the sum of the price based on the product_id from the sales table, grouped by the customer_id.
 
 ### 2. How many days has each customer visited the restaurant?
+#### Code:
 ```
 SELECT s.customer_id, COUNT(DISTINCT s.order_date) visit_count 
 FROM sales s
@@ -51,7 +62,18 @@ GROUP BY 1
 ORDER BY 1;
 ```
 
+#### Result:
+|customer_id|visit_count|
+|---|---|
+|A|4|
+|B|6|
+|C|2|
+
+### Explanation:
+By tallying the unique dates from the sales table and grouping by the customer_id, we are able to count how many days each customer visited the restaurant.
+
 ### 3. What was the first item from the menu purchased by each customer?
+#### Code:
 ```
 SELECT s.customer_id, me.product_name, MIN(s.order_date) first_order_date
 FROM sales s
@@ -61,8 +83,19 @@ WHERE s.order_date = (SELECT MIN(s2.order_date) FROM sales s2 WHERE s.customer_i
 GROUP BY 1,2
 ORDER BY 1;
 ```
+#### Result:
+|customer_id|product_name|first_order_date|
+|---|---|---|
+|A|curry|2021-01-01|
+|A|sushi|2021-01-01|
+|B|curry|2021-01-01|
+|C|ramen|2021-01-01|
+
+### Explanation:
+Firstly, by finding the first order date from each customer, we are able to use that date to match the menu(s) that each customer bought on that date. Key note to point here is that customer A bought two different menus on that date, which we will have to assume that the two menus were placed under the same order as there is no timestamp in the data.
 
 ### 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
+#### Code:
 ```
 SELECT me.product_name, s.customer_id, COUNT(1) AS purchase_count
 FROM sales s
@@ -74,32 +107,45 @@ GROUP BY 1,2
 ORDER BY 3 DESC, 2 ASC;
 ```
 
+#### Result:
+|product_name|customer_id|purchase_count|
+|---|---|---|
+|ramen|A|3|
+|ramen|C|3|
+|ramen|B|2|
+
 ### 5. Which item was the most popular for each customer?
+#### Code:
 ```
 
 ```
 
 ### 6. Which item was purchased first by the customer after they became a member?
+#### Code:
 ```
 
 ```
 
 ### 7. Which item was purchased just before the customer became a member?
+#### Code:
 ```
 
 ```
 
 ### 8. What is the total items and amount spent for each member before they became a member?
+#### Code:
 ```
 
 ```
 
 ### 9.  If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
+#### Code:
 ```
 
 ```
 
 ### 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
+#### Code:
 ```
 
 ```
@@ -107,11 +153,13 @@ ORDER BY 3 DESC, 2 ASC;
 ## Bonus Questions
 
 ### Join All The Things
+#### Code:
 ```
 
 ```
 
 ### Rank All The Things
+#### Code:
 ```
 
 ```

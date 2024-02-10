@@ -31,10 +31,14 @@ GROUP BY 1,2
 ORDER BY 1;
 
 -- 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
-SELECT s.customer_id
+SELECT me.product_name, s.customer_id, COUNT(1) AS purchase_count
 FROM sales s
-
-;
+JOIN (SELECT product_id FROM sales GROUP BY 1 ORDER BY COUNT(1) DESC LIMIT 1) s1
+ON s.product_id = s1.product_id
+JOIN menu me
+ON s.product_id = me.product_id
+GROUP BY 1,2
+ORDER BY 3 DESC, 2 ASC;
 
 -- 5. Which item was the most popular for each customer?
 -- 6. Which item was purchased first by the customer after they became a member?
