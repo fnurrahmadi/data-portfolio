@@ -1,5 +1,7 @@
 # [LeetCode - SQL 50](https://leetcode.com/studyplan/top-sql-50/)
 
+Below are the queries I came up with to solve the LeetCode problems from the SQL 50 Study Plan, using PostgreSQL.
+
 ## [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envType=study-plan-v2&envId=top-sql-50)
 ```
 SELECT product_id
@@ -583,5 +585,5 @@ FROM Users
 WHERE mail ~ '^[A-Za-z][A-Za-z_0-9\-\.\_]*@leetcode\.com$';
 ```
 
-That's the end of LeetCode - SQL 50 :)
+That's the end of LeetCode - SQL 50 :) <br>
 Check out my other exercises!
