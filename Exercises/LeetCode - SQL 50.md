@@ -207,7 +207,7 @@ WHERE d.order_date = (SELECT MIN(z.order_date) FROM Delivery z WHERE z.customer_
 ```
 SELECT ROUND(COUNT(1) / (SELECT COUNT(DISTINCT c.player_id) FROM Activity c)::numeric,2) AS fraction
 FROM Activity a
-WHERE a.event_date = (SELECT MIN(b.event_date) FROM Activity b WHERE b.player_id = a.player_id) + interval '1 day'
+WHERE a.event_date = (SELECT MIN(b.event_date) FROM Activity b WHERE b.player_id = a.player_id) + interval '1 day';
 ```
 
 ## [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/?envType=study-plan-v2&envId=top-sql-50)
@@ -266,7 +266,7 @@ FROM (SELECT num
 SELECT c.customer_id
 FROM Customer c
 GROUP BY 1
-HAVING COUNT(DISTINCT c.product_key) = (SELECT COUNT(DISTINCT p.product_key) FROM Product p)
+HAVING COUNT(DISTINCT c.product_key) = (SELECT COUNT(DISTINCT p.product_key) FROM Product p);
 ```
 
 ## [The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)
@@ -382,7 +382,7 @@ WHERE income BETWEEN 20000 AND 50000
 UNION ALL
 SELECT 'High Salary' AS category, COALESCE(COUNT(1),0) AS accounts_count
 FROM Accounts
-WHERE income > 50000
+WHERE income > 50000;
 ```
 
 ## [Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/description/?envType=study-plan-v2&envId=top-sql-50)
@@ -440,22 +440,72 @@ FROM (SELECT m.title
 
 ## [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/description/?envType=study-plan-v2&envId=top-sql-50)
 ```
-
+WITH a AS (
+    SELECT visited_on,
+        RANK() OVER (ORDER BY visited_on) AS rank,
+        SUM(amount) AS amount
+    FROM Customer
+    GROUP BY 1
+    ORDER BY 1
+),
+b AS (
+SELECT visited_on,
+    SUM(amount) OVER (ORDER BY visited_on ROWS 6 PRECEDING) AS amount,
+    AVG(amount) OVER (ORDER BY visited_on ROWS 6 PRECEDING) AS average_amount,
+    rank
+FROM a
+)
+SELECT visited_on, amount, ROUND(average_amount,2) AS average_amount
+FROM b
+WHERE rank >= 7;
 ```
 
 ## [Friend Requests II: Who Has the Most Friends](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/?envType=study-plan-v2&envId=top-sql-50)
 ```
-
+WITH a AS (
+    SELECT requester_id AS id, COUNT(1) as num
+    FROM RequestAccepted
+    GROUP BY 1
+    UNION ALL 
+    SELECT accepter_id AS id, COUNT(1) as num
+    FROM RequestAccepted
+    GROUP BY 1
+)
+SELECT id, SUM(num) AS num
+FROM a
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 1;
 ```
 
 ## [Investments in 2016](https://leetcode.com/problems/investments-in-2016/?envType=study-plan-v2&envId=top-sql-50)
 ```
-
+SELECT ROUND(SUM(tiv_2016)::NUMERIC,2) AS tiv_2016
+FROM Insurance
+WHERE tiv_2015 IN
+    (SELECT tiv_2015
+    FROM Insurance
+    GROUP BY 1
+    HAVING COUNT(1) > 1)
+AND (lat, lon) IN
+    (SELECT lat, lon
+    FROM Insurance
+    GROUP BY 1,2
+    HAVING COUNT(1) = 1);
 ```
 
 ## [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/?envType=study-plan-v2&envId=top-sql-50)
 ```
-
+WITH a AS (
+    SELECT d.name AS Department, e.name AS Employee, e.salary AS salary,
+        DENSE_RANK() OVER (PARTITION BY d.name ORDER BY salary DESC) AS rank
+    FROM Employee e
+    JOIN Department d
+        ON d.id = e.departmentId
+)
+SELECT Department, Employee, Salary
+FROM a
+WHERE rank <= 3;
 ```
 
 ## [Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/description/?envType=study-plan-v2&envId=top-sql-50)
@@ -490,12 +540,19 @@ OR
 ```
 DELETE FROM Person p1 USING Person p2
 WHERE p1.Email = p2.Email
-    AND p1.id > p2.id
+    AND p1.id > p2.id;
 ```
 
 ## [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/?envType=study-plan-v2&envId=top-sql-50)
 ```
-
+WITH a AS (
+    SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rank
+    FROM Employee
+)
+SELECT 
+    CASE WHEN (SELECT COUNT(1) FROM a) < 2 THEN null
+    ELSE (SELECT DISTINCT salary FROM a WHERE rank = 2)
+    END AS SecondHighestSalary;
 ```
 
 ## [Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/?envType=study-plan-v2&envId=top-sql-50)
